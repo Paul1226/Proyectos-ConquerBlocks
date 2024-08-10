@@ -1,0 +1,53 @@
+---
+import ButtonPages from "../components/ButtonPages.astro";
+import HeaderIcon from "../icons/HeaderIcon.astro";
+
+const imagesMicroSites = [
+    {
+        src: "/images/microsites/microsite01.jpg",
+        alt: "Preview image of the proyect microsites01",
+    },
+    {
+        src: "/images/microsites/microsite002.jpg",
+        alt: "Preview image of the proyect microsites02",
+    }
+];
+---
+
+<section
+    class="bg-smoke-900 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3"
+>
+    <h2 class="font-cinzel text-xl font-semibold flex gap-3 items-center"><HeaderIcon class:list={"fill-teal-500 w-5"} />Micro Sites</h2>
+    <p class="pb-3">
+        De igual manera estos diseños son complejos en temas de diseño y adaptabilidad en diferentes dispositivos. En estos proyectos tenemos un porfoliio y un sitio web pequeño.
+    </p>
+
+    <div class="w-full h-full relative overflow-hidden">
+        <div
+            class="absolute inset-0 z-10"
+            style="background: linear-gradient(0deg, #101010 15%, #10101010 90%);"
+        >
+        </div>
+        <figure class="w-max h-full flex items-center gap-x-3 animate-loop-reverse">
+            {
+                imagesMicroSites.map((image) => (
+                    <img class="w-[180px] aspect-video rounded-lg object-cover" src={image.src} alt={image.alt} />
+                ))
+            }
+            {
+                imagesMicroSites.map((image) => (
+                    <img class="w-[180px] aspect-video rounded-lg object-cover" src={image.src} alt={image.alt} />
+                ))
+            }
+        </figure>
+
+        <ButtonPages text="View Micro Sites" href="/MicroSites" />
+    </div>
+</section>
+
+<style>
+    .animate-loop-reverse {
+        --extra-width: 6px;
+        animation-duration: 20s;
+    }
+</style>

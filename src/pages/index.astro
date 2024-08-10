@@ -3,12 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../sections/Header.astro";
 import HeadersSection from "../sections/HeadersSection.astro"
 import FootersSection from "../sections/FootersSection.astro"
+import LandingsSection from "../sections/LandingsSection.astro"
+import MicroSitesSection from "../sections/MicroSitesSection.astro"
 ---
 
 <Layout title="Proyectos | ConquerBlocks - PaulDev">
 	<div class="flex flex-col gap-3">
 		<Header />
-		<HeadersSection />
-		<FootersSection />
+		<div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:grid-rows-2">
+			<HeadersSection />
+			<FootersSection />
+			<LandingsSection />
+			<MicroSitesSection />
+		</div>
 	</div>
 </Layout>
