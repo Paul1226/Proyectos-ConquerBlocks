@@ -1,0 +1,33 @@
+---
+interface Props {
+    title: string;
+    aka: string;
+    src: string;
+    alt: string;
+    url: string;
+    icon?: string;
+    color?: string;
+}
+
+const { title, aka, src, alt, url, icon, color } = Astro.props;
+const bgColor = `bg-[${color}]`;
+---
+
+<article class="rounded-xl w-full bg-smoke-800 border border-smoke-600 p-2">
+    <a class="w-full h-full flex flex-col gap-3 group" href={url}>
+        <figure class="w-full overflow-hidden rounded-lg">
+            <img
+                class="w-full rounded-lg object-contain transition-all duration-300 group-hover:scale-105 group-hover:brightness-[.3]"
+                loading="lazy"
+                src={src}
+                alt={alt}
+            />
+        </figure>
+        <div class="content">
+            <h2 class=`w-max p-2 rounded-full` style=`background: ${color};`>
+                <img class="h-3 min-w-16 object-contain p-[1px]" src=`${icon}` alt=`Icon de ${aka}` loading="lazy"/>
+            </h2>
+            <span class="text-xs pt-2 inline-block text-neutral-400 font-medium">{title}</span>
+        </div>
+    </a>
+</article>

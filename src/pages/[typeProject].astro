@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeaderIcon from "../icons/HeaderIcon.astro";
+import CardProject from "../components/CardProject.astro";
+
+// imports js, ts
 import * as Projects from "../scripts/projects";
 import { type Project } from "../scripts/projects";
 
@@ -50,14 +53,20 @@ try{
         </p>
 
         <div
-            class="w-full h-full relative overflow-hidden grid grid-cols-2 gap-3"
+            class="w-full h-full relative overflow-hidden grid gap-3"
+            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
         >
+        <!-- posteriormente se cambiara por el url original -->
             {
-                projectModule.map((project) => (
-                    <img
-                        class="w-full aspect-video rounded-lg object-cover"
-                        src={project.src}
-                        alt={project.alt}
+                projectModule.map(({title, aka, src, alt, url, logo, color}) => (
+                    <CardProject
+                        title={title}
+                        aka={aka}
+                        src={src}
+                        url="#"
+                        alt={alt}
+                        icon={logo}
+                        color={color}
                     />
                 ))
             }
