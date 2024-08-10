@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderIcon from "../icons/HeaderIcon.astro";
+import * as Projects from "../scripts/projects";
+import { type Project } from "../scripts/projects";
+
+export function getStaticPaths() {
+    return [
+        { params: { typeProject: "Landings" } },
+        { params: { typeProject: "MicroSites" } },
+        { params: { typeProject: "Headers" } },
+        { params: { typeProject: "Footers" } },
+    ];
+}
+const { typeProject } = Astro.params;
+const namePage = typeProject.toLowerCase();
+
+let projectModule: Project[] = [];
+
+try{   
+    if (namePage === "headers") {
+        projectModule = Projects.headers;
+    } else if (namePage === "footers") {
+        projectModule = Projects.footers;
+    } else if (namePage === "landings") {
+        projectModule = Projects.landings;
+    } else if (namePage === "microsites") {
+        projectModule = Projects.microsites;
+    }  
+}catch(error){
+    Astro.redirect("/404")
+}
+---
+
+<Layout title="Proyectos-Headers | ConquerBlocks - PaulDev">
+    <section
+        class="bg-smoke-900 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3"
+        transition:name=`section-${typeProject}`
+    >
+        <h2
+            class="font-cinzel text-3xl font-semibold flex gap-3 items-center"
+            transition:name=`section-${typeProject}-title`
+        >
+            <HeaderIcon class:list={"fill-teal-500 w-5"} />{typeProject}
+        </h2>
+        <p class="pb-3" transition:name=`section-${typeProject}-resume`>
+            En la sección de headers encontraremos páginas principales que se
+            suelen observer al ingresar a una Sitio web. Estos headers estan
+            diseñados para diferentes tipos de empresas.
+        </p>
+
+        <div
+            class="w-full h-full relative overflow-hidden grid grid-cols-2 gap-3"
+        >
+            {
+                projectModule.map((project) => (
+                    <img
+                        class="w-full aspect-video rounded-lg object-cover"
+                        src={project.src}
+                        alt={project.alt}
+                    />
+                ))
+            }
+        </div>
+    </section>
+</Layout>
