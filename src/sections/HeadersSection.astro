@@ -1,0 +1,61 @@
+---
+import ButtonPages from "../components/ButtonPages.astro";
+import HeaderIcon from "../icons/HeaderIcon.astro";
+
+const imagesHeaders = [
+    {
+        src: "/images/headers/header01.jpg",
+        alt: "Preview image of the proyect header01",
+    },
+    {
+        src: "/images/headers/header02.jpg",
+        alt: "Preview image of the proyect header02",
+    },
+    {
+        src: "/images/headers/header03.jpg",
+        alt: "Preview image of the proyect header03",
+    },
+    {
+        src: "/images/headers/header04.jpg",
+        alt: "Preview image of the proyect header04",
+    },
+];
+---
+
+<section
+    class="bg-smoke-900 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3"
+>
+    <h2 class="font-cinzel text-xl font-semibold flex gap-3 items-center"><HeaderIcon class:list={"fill-teal-500 w-5"} />Headers</h2>
+    <p class="pb-3">
+        En la sección de headers encontraremos páginas principales que se suelen
+        observer al ingresar a una Sitio web.
+    </p>
+
+    <div class="w-full h-full relative overflow-hidden">
+        <div
+            class="absolute inset-0 z-10 [background:linear-gradient(0deg,#101010_15%,#10101010)_90%]"
+        >
+        </div>
+        <figure class="w-max h-full flex items-center gap-x-3 animate-loop">
+            {
+                imagesHeaders.map((image) => (
+                    <img class="w-[180px] aspect-video rounded-lg" src={image.src} alt={image.alt} />
+                ))
+            }
+            {
+                imagesHeaders.map((image) => (
+                    <img class="w-[180px] aspect-video rounded-lg" src={image.src} alt={image.alt} />
+                ))
+            }
+        </figure>
+
+        <ButtonPages text="View Headers" href="/Headers" />
+    </div>
+</section>
+
+<style>
+    .animate-loop {
+        --extra-width: 6px;
+        animation-duration: 20s;
+    }
+</style>
