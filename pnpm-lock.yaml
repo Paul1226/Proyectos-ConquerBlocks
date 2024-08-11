@@ -17,6 +17,9 @@ importers:
       '@fontsource-variable/cinzel':
         specifier: ^5.0.13
         version: 5.0.13
+      '@fontsource/bebas-neue':
+        specifier: ^5.0.20
+        version: 5.0.20
       '@fontsource/poppins':
         specifier: ^5.0.14
         version: 5.0.14
@@ -336,6 +339,9 @@ packages:
 
   '@fontsource-variable/cinzel@5.0.13':
     resolution: {integrity: sha512-kRCgDPd/ZcYBw3/GuIv1rgLMRv8AB6QbEhfzrlMTCug21xHOsqsrCqQL55nykqf9g5Z1Fb7tszW6r/8V5pvwbg==}
+
+  '@fontsource/bebas-neue@5.0.20':
+    resolution: {integrity: sha512-lJ/y3N/dzOZw1j1ArSOju0Mcz5vEyn81WsUm+ECIicnkT3Um6Y/+IUW+k7roWKSj1pKTu+kyFPZMuVhikoQZBw==}
 
   '@fontsource/poppins@5.0.14':
     resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
@@ -2377,6 +2383,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/cinzel@5.0.13': {}
+
+  '@fontsource/bebas-neue@5.0.20': {}
 
   '@fontsource/poppins@5.0.14': {}
 

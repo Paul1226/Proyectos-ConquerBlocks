@@ -27,7 +27,7 @@ const { title, nameProject } = Astro.props;
 	</head>
 	<body class="font-poppins w-full max-w-[1366px] mx-auto">
 		<ScreenSmall nameProject={nameProject} />
-		<main class="hidden md:block">
+		<main class="hidden md:block relative">
 			<slot />
 		</main>
 	</body>
