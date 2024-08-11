@@ -11,10 +11,15 @@ export default {
 					"0%": { transform: "translateX(calc(-50% - var(--extra-width)))" },
 					"100%": { transform: "translateX(0)" }
 				},
+				"ping-rotate": {
+					"0%": { transform: "rotate(0deg); opacity: 0" },
+					"100%": { transform: "rotate(-180deg); opacity: 1" }
+				}
 			},
 			animation: {
 				loop: "loop linear infinite",
 				"loop-reverse": "loop-reverse linear infinite",
+				"ping-rotate": "ping-rotate 3s cubic-bezier(0, 0, 0.2, 1) infinite"
 			},
 			fontFamily: {
 				cinzel: ['Cinzel Variable', 'sans-serif'],

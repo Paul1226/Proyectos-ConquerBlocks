@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ButtonPages from "../components/ButtonPages.astro";
+
+// icons
+import Twitter404 from "../icons/404Icons/Twitter404.astro";
+import Instagram404 from "../icons/404Icons/Instagram404.astro";
+import Linkedin404 from "../icons/404Icons/Linkedin404.astro";
+
+import Pared from "../icons/404Icons/Pared.astro";
+import Enchufe from "../icons/404Icons/Enchufe.astro";
+---
+
+<Layout title="404 | ConquerBlocks - PaulDev">
+    <section class="grid grid-cols-4 gap-6 py-5">
+
+        <article class="col-span-4 flex justify-center items-center gap-3">
+            <figure
+                class="w-full max-w-[100px] overflow-hidden rounded-xl bg-central-400 relative"
+            >
+                <img
+                    class="w-full h-full object-cover scale-125 saturate-150 bg-gradient-to-t from-teal-950 to-teal-600 rounded-xl"
+                    src="/images/perfil.webp"
+                    alt="Imagen de perfil del autor"
+                />
+            </figure>
+
+            <div class="">
+                <h1 class="text-2xl font-semibold pb-2 font-cinzel">Paul<span class="text-transparent bg-gradient-to-t from-teal-950 to-teal-600 bg-clip-text font-bold">Dev</span></h1>
+                <div class="conicons flex items-center gap-x-2">
+                    <a class="w-8 p-[6px] rounded-md bg-smoke-600 transition-transform duration-300 ease-in-out hover:translate-y-[-3px]" href="#" target="_blank">
+                        <Twitter404 class="w-full fill-neutral-300" />
+                    </a>
+                    <a class="w-8 p-[6px] rounded-md bg-smoke-600 transition-transform duration-300 ease-in-out hover:translate-y-[-3px]" href="#" target="_blank">
+                        <Instagram404 class="w-full fill-neutral-300" />
+                    </a>
+                    <a class="w-8 p-[6px] rounded-md bg-smoke-600 transition-transform duration-300 ease-in-out hover:translate-y-[-3px]" href="#" target="_blank">
+                        <Linkedin404 class="w-full fill-neutral-300" />
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-span-4 rounded-3xl bg-smoke-900 overflow-hidden relative w-full max-w-[500px] mx-auto">
+            <Pared class="w-full h-full fill-smoke-700 object-cover relative z-10" />
+            <div class="absolute top-5 left-1/2 -translate-x-1/2 w-[250px] z-[9]">
+                <Enchufe class="w-full h-full fill-teal-400 object-cover" />
+            </div>
+            <div class="absolute inset-0 z-20 [background:linear-gradient(0deg,#191919,#19191910)]"></div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col gap-y-2 items-center">
+                <span class="text-6xl font-medium pb-5">404</span>
+                <span class="font-semibold text-neutral-400">Page Not Found</span>
+                <ButtonPages text="Go Home" href="/" nameTransition="Home"/>
+            </div>
+        </article>
+    </section>
+</Layout>

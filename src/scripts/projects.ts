@@ -14,7 +14,7 @@ export const headers: Project[] = [
         aka: "Archesky",
         src: "/images/headers/header01.webp",
         alt: "Preview image of the proyect header01",
-        url: "/Headers/Smart-Business",
+        url: "/Headers/SmartBusiness",
         logo: "/iconsHeaders/Archesky.webp",
         color: "#fff"
     },
@@ -106,7 +106,7 @@ export const footers: Project[] =[
         aka: "Maxwell lightmode",
         src: "/images/footers/footer01.webp",
         alt: "Preview image of the proyect footer01",
-        url: "/footers/Maxwell-Light",
+        url: "/Footers/Maxwell-Light",
         logo: "/iconsFooters/MaxwellLight.webp",
         color: "#fff"
     },
