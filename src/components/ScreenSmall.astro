@@ -8,10 +8,10 @@ interface Props {
 const { nameProject } = Astro.props
 ---
 
-<section class="bg-smoke-900 w-full h-[100dvh] p-4 text-neutral-400 lg:hidden">
+<section class="bg-smoke-900 w-full h-[100dvh] p-4 text-neutral-400 md:hidden">
     <article class="w-full h-full flex justify-center items-center flex-col bg-smoke-700 border border-smoke-600 rounded-xl gap-4 p-2">
         <h2 class="text-3xl font-semibold text-center text-neutral-300">{nameProject}</h2>
-        <span class="text-balance text-center">Estamos trabajando para adaptar el contenido en pantalla menores a <span class="text-teal-500">1024px</span>, intenta girando tu dispositivo</span>
+        <span class="text-balance text-center">Estamos trabajando para adaptar el contenido en pantalla menores a <span class="text-teal-500">800px</span>, intenta girando tu dispositivo</span>
         <div class="size-[300px] flex justify-center items-center">
             <div class="relative w-full h-full">
                 <span class="absolute inset-8 animate-ping-rotate">

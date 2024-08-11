@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			screens: {
+				md: '800px',
+			},
 			keyframes:{
 				"loop": {
 					"100%": { transform: "translateX(calc(-50% - var(--extra-width)))" }
