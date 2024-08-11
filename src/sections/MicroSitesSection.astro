@@ -5,7 +5,7 @@ import { microsites } from "../scripts/projects";
 ---
 
 <section
-    class="bg-smoke-900 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3 transition-all duration-300"
+    class="bg-smoke-800 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3 transition-all duration-300"
     transition:name="section-MicroSites"
 >
     <h2
@@ -23,7 +23,7 @@ import { microsites } from "../scripts/projects";
     <div class="w-full h-full relative overflow-hidden">
         <div
             class="absolute inset-0 z-10"
-            style="background: linear-gradient(0deg, #101010 15%, #10101010 90%);"
+            style="background: linear-gradient(0deg, #161616 15%, #16161610 90%);"
         >
         </div>
         <figure
@@ -35,6 +35,7 @@ import { microsites } from "../scripts/projects";
                         class="w-[180px] aspect-video rounded-lg object-cover"
                         src={image.src}
                         alt={image.alt}
+                        loading="lazy"
                     />
                 ))
             }
@@ -44,6 +45,7 @@ import { microsites } from "../scripts/projects";
                         class="w-[180px] aspect-video rounded-lg object-cover"
                         src={image.src}
                         alt={image.alt}
+                        loading="lazy"
                     />
                 ))
             }
@@ -67,7 +69,7 @@ import { microsites } from "../scripts/projects";
             }
         </figure>
 
-        <ButtonPages text="View Micro Sites" href="/MicroSites" />
+        <ButtonPages text="View Micro Sites" href="/MicroSites" nameTransition="MicroSites"/>
     </div>
 </section>
 

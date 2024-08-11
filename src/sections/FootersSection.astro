@@ -7,7 +7,7 @@ const firstFooters = footers.slice(0, 4);
 ---
 
 <section
-    class="bg-smoke-900 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3 transition-all duration-300"
+    class="bg-smoke-800 border border-smoke-700 rounded-xl w-full p-3 flex flex-col gap-3 transition-all duration-300"
     transition:name="section-Footers"
 >
     <h2
@@ -24,7 +24,8 @@ const firstFooters = footers.slice(0, 4);
 
     <div class="w-full h-full relative overflow-hidden">
         <div
-            class="absolute inset-0 z-10 [background:linear-gradient(0deg,#101010_15%,#10101010)_90%]"
+            class="absolute inset-0 z-10"
+            style="background: linear-gradient(0deg, #161616 15%, #16161610 90%);"
         >
         </div>
         <figure
@@ -36,6 +37,7 @@ const firstFooters = footers.slice(0, 4);
                         class="w-[180px] aspect-video rounded-lg object-cover"
                         src={image.src}
                         alt={image.alt}
+                        loading="lazy"
                     />
                 ))
             }
@@ -45,12 +47,13 @@ const firstFooters = footers.slice(0, 4);
                         class="w-[180px] aspect-video rounded-lg object-cover"
                         src={image.src}
                         alt={image.alt}
+                        loading="lazy"
                     />
                 ))
             }
         </figure>
 
-        <ButtonPages text="View Footers" href="/Footers" />
+        <ButtonPages text="View Footers" href="/Footers" nameTransition="Footers" />
     </div>
 </section>
 
