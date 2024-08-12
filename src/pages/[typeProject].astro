@@ -8,15 +8,18 @@ import ButtonPages from "../components/ButtonPages.astro";
 import * as Projects from "../scripts/projects";
 import { type Project } from "../scripts/projects";
 
-export function getStaticPaths() {
+export const getStaticPaths = () => {
     return [
-        { params: { typeProject: "Landings" } },
-        { params: { typeProject: "MicroSites" } },
         { params: { typeProject: "Headers" } },
         { params: { typeProject: "Footers" } },
-    ];
+        { params: { typeProject: "Landings" } },
+        { params: { typeProject: "Microsites" } },
+    ]
 }
+
 const { typeProject } = Astro.params;
+let resume = ''
+
 const namePage = typeProject.toLowerCase();
 
 let projectModule: Project[] = [];
@@ -24,12 +27,19 @@ let projectModule: Project[] = [];
 try{   
     if (namePage === "headers") {
         projectModule = Projects.headers;
+        resume = "En la sección de headers se encuentran las páginas principales que suelen verse al ingresar a un sitio web, desarrolladas para diferentes tipos de empresas."
+
     } else if (namePage === "footers") {
         projectModule = Projects.footers;
+        resume = "En la sección de footers se encuentran los pies de página, generalmente ubicados al final del sitio web, algunos diseñados para dark mode."
+
     } else if (namePage === "landings") {
         projectModule = Projects.landings;
+        resume ="Hemos desarrollado sitios web más complejos, optimizados para adaptarse a distintos dispositivos, asegurando una experiencia de usuario fluida y consistente."
+
     } else if (namePage === "microsites") {
         projectModule = Projects.microsites;
+        resume="Estos diseños son igualmente complejos en términos de diseño y adaptabilidad a diferentes dispositivos. En estos proyectos incluimos un portafolio y un sitio web compacto."
     }  
 }catch(error){
     Astro.redirect("/404")
@@ -42,15 +52,13 @@ try{
         transition:name=`section-${typeProject}`
     >
         <h2
-            class="font-cinzel text-3xl font-semibold flex gap-3 items-center"
+            class="font-cinzel text-3xl font-semibold flex gap-3 items-center justify-center"
             transition:name=`section-${typeProject}-title`
         >
             <HeaderIcon class:list={"fill-teal-500 w-5"} />{typeProject}
         </h2>
         <p class="pb-3 text-neutral-400" transition:name=`section-${typeProject}-resume`>
-            En la sección de headers encontraremos páginas principales que se
-            suelen observer al ingresar a una Sitio web. Estos headers estan
-            diseñados para diferentes tipos de empresas.
+            {resume}
         </p>
 
         <div

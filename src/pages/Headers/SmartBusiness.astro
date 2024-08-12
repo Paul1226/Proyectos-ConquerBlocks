@@ -29,12 +29,57 @@ import "@fontsource/bebas-neue";
         class="grid grid-rows-1 w-full h-full absolute top-0 -z-50 pointer-events-none"
         style="grid-template-columns: 0.6fr 1fr;"
     >
-        <div class="uno w-full h-full"></div>
+        <footer
+            class="absolute w-11/12 h-max top-[93%] left-10 z-10 flex justify-between items-stretch gap-4 pb-8"
+        >
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/bussines-plan.webp"
+                        alt="icon bussiness-plan"
+                    />
+                </figure>
+                <h3>Business Planning</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/financial-plan.webp"
+                        alt="icon financial-plan"
+                    />
+                </figure>
+                <h3>Financial Planning</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/marketing.webp"
+                        alt="icon marketing"
+                    />
+                </figure>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/presentation.webp"
+                        alt="icon presentation"
+                    />
+                </figure>
+                <h3>Market Analysis</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </footer>
+
+        <div class="uno w-full h-full" style="background: var(--white);"></div>
         <div
             class="dos w-full h-full relative overflow-hidden"
             style="background: var(--celeste);"
         >
-            <figure class="bg-red- absolute bottom-0 left-0 xl:left-10">
+            <figure class="absolute bottom-0 left-0 xl:left-10">
                 <img
                     class="min-w-[500px] max-w-[670px]"
                     src="/imagesProjectsHeaders/BusinessAggency-hero.webp"
@@ -68,7 +113,7 @@ import "@fontsource/bebas-neue";
                     Let's Discuss
                 </a>
 
-                <div class="container-cards flex gap-4 py-10">
+                <div class="container-cards flex gap-4 pt-8 pb-16">
                     <article>
                         <h2>10+</h2>
                         <p>Years Experience</p>
@@ -90,7 +135,6 @@ import "@fontsource/bebas-neue";
 <style>
     :root {
         /* colores */
-        --white: #f5f5f5;
         --celeste: #7edad2;
         --celestehv: #39bdb2;
         --black: #424241;
@@ -99,6 +143,13 @@ import "@fontsource/bebas-neue";
         /* fuentes */
         --bebas: "Bebas Neue", sans-serif;
     }
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--celeste) #ffffff10;
+        color: var(--black);
+    }
+
     p {
         color: var(--gray);
     }
@@ -117,9 +168,32 @@ import "@fontsource/bebas-neue";
         }
     }
 
+    nav {
+        a{
+            position: relative;
+            padding-bottom: 2px;
+
+            &::after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: var(--black);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width 0.3s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
     .container-cards {
         article {
-            @apply flex flex-col items-center transition-shadow duration-300 ease-linear p-3 hover:[box-shadow:0_0_10px_rgba(0,0,0,0.1)] bg-white rounded-xl;
+            @apply flex flex-col items-center transition-shadow duration-300 ease-linear p-3 hover:[box-shadow:0_0_10px_rgba(0,0,0,0.1)] rounded-xl;
+            background-color: var(--white);
             min-width: 100px;
             width: 100%;
 
@@ -127,9 +201,35 @@ import "@fontsource/bebas-neue";
                 font-family: var(--bebas);
                 @apply text-4xl text-balance;
             }
-            p{
+            p {
                 @apply text-sm text-pretty text-center;
             }
+        }
+    }
+
+    footer {
+        article {
+            background-color: var(--white);
+            @apply rounded-xl flex flex-col gap-2 p-3;
+
+            h3 {
+                @apply text-balance text-lg font-medium;
+            }
+
+            p{
+                @apply text-pretty;
+            }
+        }
+    }
+
+    @keyframes borders {
+        0% {
+            border-color: transparent;
+            border-width: 0%;
+        }
+        100% {
+            border-width: 100%;
+            border-color: red;
         }
     }
 </style>

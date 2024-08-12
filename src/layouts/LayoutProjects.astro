@@ -25,10 +25,17 @@ const { title, nameProject } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="font-poppins w-full max-w-[1366px] mx-auto">
+	<body class="font-poppins w-full max-w-[1366px] mx-auto" style="background-color: var(--white);">
 		<ScreenSmall nameProject={nameProject} />
-		<main class="hidden md:block relative">
+		<main class="hidden md:block relative" >
 			<slot />
 		</main>
 	</body>
 </html>
+
+<style>
+	:root {
+		--white: #f9f9f9;
+	}
+	
+</style>

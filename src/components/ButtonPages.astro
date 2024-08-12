@@ -7,6 +7,7 @@ interface Props {
 const { text, href, nameTransition } = Astro.props
 ---
 <a
+    {...Astro.props}
     class="absolute bg-smoke-700 w-36 h-12 bottom-0 left-1/2 -translate-x-1/2 z-20 rounded-lg grid place-content-center a-link overflow-hidden group transition-all duration-300"
     href={href}
     transition:name=`section-${nameTransition}-button`
