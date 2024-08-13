@@ -16,7 +16,7 @@ import "@fontsource/bebas-neue";
         </a>
         <nav class="w-max">
             <ul class="flex items-center gap-8">
-                <li><a class="link" href="/">Home</a></li>
+                <li><a class="link" href="/Headers/SmartBusiness">Home</a></li>
                 <li><a class="link" href="#">Service</a></li>
                 <li><a class="link" href="#">Portofolio</a></li>
                 <li><a class="link" href="#">Works</a></li>
@@ -74,10 +74,9 @@ import "@fontsource/bebas-neue";
             </article>
         </footer>
 
-        <div class="uno w-full h-full" style="background: var(--white);"></div>
+        <div class="uno w-full h-full"></div>
         <div
-            class="dos w-full h-full relative overflow-hidden"
-            style="background: var(--celeste);"
+            class="dos w-full h-full relative overflow-hidden bg-headers-primero-primario"
         >
             <figure class="absolute bottom-0 left-0 xl:left-10">
                 <img
@@ -97,8 +96,8 @@ import "@fontsource/bebas-neue";
         >
             <article class="w-11/12 ml-auto">
                 <h1
-                    class="text-7xl w-[160%] text-balance xl:text-[86px] pb-4"
-                    style="font-family: var(--bebas); transition:font-size 0.5s linear;"
+                    class="text-7xl w-[160%] text-balance xl:text-[86px] pb-4 font-bebas"
+                    style="transition:font-size 0.5s linear;"
                 >
                     <span>Smart</span>&nbsp;Business with <span>Smart</span> People
                 </h1>
@@ -133,37 +132,26 @@ import "@fontsource/bebas-neue";
 </LayoutProjects>
 
 <style>
-    :root {
-        /* colores */
-        --celeste: #7edad2;
-        --celestehv: #39bdb2;
-        --black: #424241;
-        --gray: #909090;
-
-        /* fuentes */
-        --bebas: "Bebas Neue", sans-serif;
-    }
     html {
         scroll-behavior: smooth;
         scrollbar-width: thin;
-        scrollbar-color: var(--celeste) #ffffff10;
-        color: var(--black);
+        scrollbar-color: #7edad2 transparent;
     }
 
     p {
-        color: var(--gray);
+        @apply text-headers-primero-letters
     }
 
     span {
-        color: var(--celeste);
+        @apply text-headers-primero-primario;
     }
 
     main section {
         a {
-            background-color: var(--celeste);
+            @apply bg-headers-primero-primario;
 
             &:hover {
-                background-color: var(--celestehv);
+                @apply bg-headers-primero-primario/80;
             }
         }
     }
@@ -177,11 +165,12 @@ import "@fontsource/bebas-neue";
                 content: '';
                 width: 0%;
                 height: 2px;
-                background-color: var(--black);
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 transition: width 0.3s ease-in-out;
+
+                @apply bg-headers-primero-letters rounded-full;
             }
 
             &:hover::after {
@@ -192,14 +181,12 @@ import "@fontsource/bebas-neue";
 
     .container-cards {
         article {
-            @apply flex flex-col items-center transition-shadow duration-300 ease-linear p-3 hover:[box-shadow:0_0_10px_rgba(0,0,0,0.1)] rounded-xl;
-            background-color: var(--white);
+            @apply flex flex-col items-center transition-shadow duration-300 ease-linear p-3 hover:[box-shadow:0_0_10px_rgba(0,0,0,0.1)] rounded-xl bg-headers-primero-claro;
             min-width: 100px;
             width: 100%;
 
             h2 {
-                font-family: var(--bebas);
-                @apply text-4xl text-balance;
+                @apply text-4xl text-balance font-bebas;
             }
             p {
                 @apply text-sm text-pretty text-center;
@@ -209,8 +196,7 @@ import "@fontsource/bebas-neue";
 
     footer {
         article {
-            background-color: var(--white);
-            @apply rounded-xl flex flex-col gap-2 p-3;
+            @apply rounded-xl flex flex-col gap-2 p-3 bg-headers-primero-claro;
 
             h3 {
                 @apply text-balance text-lg font-medium;
@@ -224,12 +210,10 @@ import "@fontsource/bebas-neue";
 
     @keyframes borders {
         0% {
-            border-color: transparent;
             border-width: 0%;
         }
         100% {
             border-width: 100%;
-            border-color: red;
         }
     }
 </style>

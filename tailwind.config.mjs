@@ -26,7 +26,8 @@ export default {
 			},
 			fontFamily: {
 				cinzel: ['Cinzel Variable', 'sans-serif'],
-				poppins: ['Poppins', 'sans-serif']
+				poppins: ['Poppins', 'sans-serif'],
+				bebas: ['Bebas Neue', 'cursive'],
 			},
 			colors: {
 				smoke: {
@@ -54,6 +55,18 @@ export default {
 					'800': '#115e59',
 					'900': '#134e4a',
 					'950': '#042f2e',
+				},
+				headers:{
+					primero:{
+						primario:"#7edad2",
+						claro:"#f9f9f9",
+						letters:"#424241",
+						paraghap:"#909090",
+					},
+					segundo:{
+						primario:"#515DEF",
+						secundario:"#1BCFF6",
+					}
 				}
 			}
 		},

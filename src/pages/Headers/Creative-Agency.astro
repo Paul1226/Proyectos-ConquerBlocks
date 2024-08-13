@@ -1,0 +1,151 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+---
+
+<LayoutProjects
+    title="Creative Agency - ConquerBlocks | PaulDev"
+    nameProject="Archesky"
+>
+    <div class="grid w-full" style="grid-template-columns: 1.2fr 1fr">
+        <div
+            class="content flex flex-col justify-start bg-headers-segundo-primario text-headers-primero-claro pt-24"
+        >
+            <!-- header -->
+            <header
+                class="absolute top-0 w-full bg-red-0 z-10 grid py-4"
+                style="grid-template-columns: 1.2fr 1fr;"
+            >
+                <div class="flex justify-between items-center w-11/12 mx-auto">
+                    <a
+                        class="font-semibold text-2xl"
+                        href="/Headers/Creative-Agency"
+                        >Liv<span class="text-headers-segundo-secundario"
+                            >ia</span
+                        >.</a
+                    >
+                    <ul class="flex gap-6 w-max items-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Porfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="w-11/12 mx-auto flex justify-end h-min py-4">
+                    <a class="bg-headers-segundo-primario px-4 py-3" href="#"
+                        >Contact Us</a
+                    >
+                </div>
+            </header>
+
+            <div class="w-11/12 mx-auto flex flex-col gap-4">
+                <p>Hi, There!</p>
+                <h1
+                    class="text-4xl lg:text-5xl font-bold text-balance xl:text-[52px] lg:leading-[1.1] w-[110%]"
+                    style="transition: font-size 0.5s linear"
+                >
+                    We are a growing&#8209;up Creative Agency from Indonesia!
+                </h1>
+                <p class="pb-4 w-4/5">
+                    We provides you with modest and professional design
+                    templates that come from the synergy of design and
+                    technology
+                </p>
+                <a
+                    class="inline-flex gap-2 items-center w-max rounded-md font-medium transition-all duration-200 ease-linear bg-headers-primero-claro text-headers-primero-letters px-4 py-3"
+                    href="#"
+                >
+                    <span>Let’s Collaborate</span>
+                    <svg
+                        class="w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        ><path
+                            d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                        ></path></svg
+                    >
+                </a>
+            </div>
+        </div>
+        <figure class="overflow-hidden w-full h-full relative -z-10">
+            <img
+                class="w-full object-cover scale-125 min-h-[600px] max-h-[650px]"
+                src="/imagesProjectsHeaders/hero-livia.webp"
+                alt="Icono hero de la página de Creative Agency"
+            />
+        </figure>
+    </div>
+
+    <!-- footer -->
+    <footer
+        class="absolute bg-headers-primero-claro bottom-0 text-headers-primero-letters flex items-stretch gap-4 min-w-[700px] max-w-[60%] p-4 rouneded-lg"
+    >
+        <article>
+            <figure>
+                <img
+                    class="w-10 object-cover"
+                    src="/imagesProjectsHeaders/Web-Design-livia.webp"
+                    alt="Icono de web Design"
+                />
+            </figure>
+
+            <h3>Web Design Projects</h3>
+            <p>Make your website user friendly and look more profesional</p>
+        </article>
+        <article>
+            <figure>
+                <img
+                    class="w-10 object-cover"
+                    src="/imagesProjectsHeaders/Social-Media-livia.webp"
+                    alt="Icono de social media"
+                />
+            </figure>
+
+            <h3>Social Media Templates</h3>
+            <p>Gain more followers or subscribers with the right template</p>
+        </article>
+        <article>
+            <figure>
+                <img
+                    class="w-10 object-cover"
+                    src="/imagesProjectsHeaders/Digital-livia.webp"
+                    alt="Icono de web Digital"
+                />
+            </figure>
+
+            <h3>Digital Artwork</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                id.
+            </p>
+        </article>
+    </footer>
+</LayoutProjects>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #515def transparent;
+    }
+
+    .content {
+        a {
+            &:hover {
+                scale: 0.95;
+            }
+        }
+    }
+
+    footer {
+        article {
+            h3{
+                @apply text-balance font-semibold;
+            }
+            p{
+                @apply text-pretty text-sm text-headers-primero-paraghap;
+            }
+        }
+    }
+</style>
