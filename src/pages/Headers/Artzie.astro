@@ -1,0 +1,212 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// icons
+
+// fonts
+import "@fontsource/belgrano";
+---
+
+<LayoutProjects title="Artizie - ConquerBlocks | PaulDev" nameProject="Artizie">
+    <div class="w-full h-full">
+        <!-- header -->
+        <header
+            class="grid absolute top-0 w-11/12 left-1/2 -translate-x-1/2 py-3 z-10"
+            style="grid-template-columns: 1.1fr 1fr;"
+        >
+            <div class="flex justify-between items-center">
+                <a
+                    class="font-belgrano text-3xl text-headers-cuarto-letters"
+                    href="/Headers/Artzie"
+                    ><span class="text-headers-cuarto-primario">Art</span
+                    >zie.</a
+                >
+
+                <nav class="pr-6">
+                    <ul class="flex items-center gap-4">
+                        <li><a href="#">Market</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <sidebar class="flex justify-end">
+                <ul class="flex items-center gap-8">
+                    <li>
+                        <a
+                            class="hover:underline text-headers-primero-claro"
+                            href="#">Sign Up</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="bg-headers-cuarto-primario text-headers-primero-claro inline-flex px-5 py-2 rounded-md"
+                            href="#">Sign In</a
+                        >
+                    </li>
+                </ul>
+            </sidebar>
+        </header>
+
+        <!-- main -->
+        <main
+            class="grid items-center"
+            style="grid-template-columns: 1.1fr 1fr;"
+        >
+            <section class="w-11/12 ml-auto mr-3 flex flex-col gap-5">
+                <h1
+                    class="font-belgrano text-3xl pt-16 lg:text-4xl xl:text-5xl lg:pt-8"
+                    style="transition: font-size 0.5s, padding 0.5s"
+                >
+                    The <span
+                        class=""
+                        style="background-image: url('/imagesProjectsHeaders/rounded-artzie.webp'); background-size: contain; background-position: center; background-repeat: no-repeat;"
+                        >largest</span
+                    > NFT market with&nbsp;exceptional items on&nbsp;the&nbsp;bid
+                </h1>
+                <p class="text-headers-primero-paraghap text-pretty">
+                    Collectible and non-fungible tokens in your hands
+                </p>
+
+                <article class="flex items-center gap-3 w-full max-w-[350px]">
+                    <a
+                        class="text-headers-primero-claro inline-flex justify-center items-center w-full h-full py-2 bg-headers-cuarto-primario rounded-md"
+                        href="#">Explore</a
+                    >
+                    <a
+                        class="inline-flex items-center justify-center gap-2 w-full h-full py-2"
+                        href="#"
+                    >
+                        <span>Learn more</span>
+                        <svg
+                            class="w-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            ><path
+                                d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                            ></path></svg
+                        >
+                    </a>
+                </article>
+
+                <article class="w-full pt-6">
+                    <h4 class="font-belgrano text-2xl pb-4">
+                        Featured Artwork
+                    </h4>
+                    <div class="flex items-center justify-center w-full gap-4">
+                        <figure>
+                            <img
+                                class="object-cover p-1 rounded-lg border-2 border-headers-primero-paraghap"
+                                src="/imagesProjectsHeaders/feactured1-artzie.webp"
+                                alt="Imagen feactured 1"
+                            />
+                        </figure>
+                        <figure>
+                            <img
+                                class="object-cover p-1 rounded-lg border-2 border-headers-primero-paraghap"
+                                src="/imagesProjectsHeaders/feactured2-artzie.webp"
+                                alt="Imagen feactured 2"
+                            />
+                        </figure>
+                    </div>
+                </article>
+            </section>
+
+            <section
+                class="bg-headers-cuarto-letters h-full pt-20 px-6 relative overflow-hidden"
+            >
+                <div class="relative z-20">
+                    <figure class="w-full max-w-[550px]">
+                        <img
+                            class="w-full h-full object-cover"
+                            src="/imagesProjectsHeaders/hero-artzie.webp"
+                            alt="Imagen hero de Artzie"
+                        />
+                    </figure>
+                    <article
+                        class="absolute bottom-10 w-full max-w-[550px] bg-headers-primero-claro text-headers-cuarto-letters p-4"
+                    >
+                        <div
+                            class="flex justify-between items-center pb-4 border-b border-headers-cuarto-letters"
+                        >
+                            <div class="flex items-center gap-2">
+                                <figure class="w-12">
+                                    <img
+                                        class="object-cover rounded-full w-full"
+                                        src="/imagesProjectsHeaders/perfil-artzie.webp"
+                                        alt="Imagen de perfil"
+                                    />
+                                </figure>
+                                <div class="">
+                                    <p
+                                        class="text-headers-primero-paraghap text-sm"
+                                    >
+                                        @Samanthaw
+                                    </p>
+                                    <p class="font-semibold text-lg">
+                                        Artwork #01
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="w-max">
+                                <p
+                                    class="text-headers-primero-paraghap text-sm"
+                                >
+                                    Current Bid
+                                </p>
+                                <p class="font-semibold text-lg">1.00 ETH</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <a
+                                class="text-headers-primero-claro inline-flex justify-center items-center w-full h-full py-2 bg-headers-cuarto-primario rounded-md"
+                                href="#">Big Now</a
+                            >
+                            <a
+                                class="inline-flex justify-center items-center w-full h-full py-2 text-headers-cuarto-primario rounded-md font-semibold"
+                                href="#">View Artwork</a
+                            >
+                        </div>
+                    </article>
+                </div>
+
+                <article
+                    class="flex justify-between items-center text-headers-cuarto-letters numbers-card pb-8"
+                >
+                    <p><span>50K+ </span>Artwork</p>
+                    <p><span>30K+ </span>Artist</p>
+                    <p><span>20K+ </span>Auction</p>
+                </article>
+
+                <div class="font-bg absolute right-0">
+                    <span
+                        class="text-headers-primero-claro/10 text-[9rem] font-belgrano origin-top-right rotate-90 block w-min h-min leading-none lg:text-[10rem] xl:text-[11rem]"
+                        style="transition: font-size 0.5s;"
+                        >Artzie.</span
+                    >
+                </div>
+            </section>
+        </main>
+    </div>
+</LayoutProjects>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #fa504d transparent;
+    }
+    .numbers-card {
+        p {
+            @apply text-headers-primero-claro w-full max-w-[550px];
+            span {
+                @apply text-headers-cuarto-primario font-semibold text-2xl;
+            }
+        }
+    }
+</style>

@@ -23,6 +23,9 @@ importers:
       '@fontsource/bebas-neue':
         specifier: ^5.0.20
         version: 5.0.20
+      '@fontsource/belgrano':
+        specifier: ^5.0.12
+        version: 5.0.12
       '@fontsource/poppins':
         specifier: ^5.0.14
         version: 5.0.14
@@ -348,6 +351,9 @@ packages:
 
   '@fontsource/bebas-neue@5.0.20':
     resolution: {integrity: sha512-lJ/y3N/dzOZw1j1ArSOju0Mcz5vEyn81WsUm+ECIicnkT3Um6Y/+IUW+k7roWKSj1pKTu+kyFPZMuVhikoQZBw==}
+
+  '@fontsource/belgrano@5.0.12':
+    resolution: {integrity: sha512-s6qTcXgR6oYUtY0mxHLdw2unjcprXLmSZCQw1LBjxngRuRCkotimyhJ3PfCjLf+zon4oxeSet0hYE5xOUKPf4A==}
 
   '@fontsource/poppins@5.0.14':
     resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
@@ -2393,6 +2399,8 @@ snapshots:
   '@fontsource-variable/playfair-display@5.0.25': {}
 
   '@fontsource/bebas-neue@5.0.20': {}
+
+  '@fontsource/belgrano@5.0.12': {}
 
   '@fontsource/poppins@5.0.14': {}
 
