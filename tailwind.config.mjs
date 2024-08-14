@@ -28,6 +28,7 @@ export default {
 				cinzel: ['Cinzel Variable', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
 				bebas: ['Bebas Neue', 'cursive'],
+				playfair: ['Playfair Display Variable', 'sans-serif'],
 			},
 			colors: {
 				smoke: {
@@ -66,6 +67,10 @@ export default {
 					segundo:{
 						primario:"#515DEF",
 						secundario:"#1BCFF6",
+					},
+					tercero: {
+						primario:"#9B9A78",
+						letters:"#313131"
 					}
 				}
 			}

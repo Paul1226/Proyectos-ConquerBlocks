@@ -17,6 +17,9 @@ importers:
       '@fontsource-variable/cinzel':
         specifier: ^5.0.13
         version: 5.0.13
+      '@fontsource-variable/playfair-display':
+        specifier: ^5.0.25
+        version: 5.0.25
       '@fontsource/bebas-neue':
         specifier: ^5.0.20
         version: 5.0.20
@@ -339,6 +342,9 @@ packages:
 
   '@fontsource-variable/cinzel@5.0.13':
     resolution: {integrity: sha512-kRCgDPd/ZcYBw3/GuIv1rgLMRv8AB6QbEhfzrlMTCug21xHOsqsrCqQL55nykqf9g5Z1Fb7tszW6r/8V5pvwbg==}
+
+  '@fontsource-variable/playfair-display@5.0.25':
+    resolution: {integrity: sha512-q8tzLiURtXycJQ27YoppTNCEe0W2ZRXIeZ25nH9KoM6fsbWYZAm9ItY0aRoL/jn/GllsEcTSm8H2UKa7l4AxDw==}
 
   '@fontsource/bebas-neue@5.0.20':
     resolution: {integrity: sha512-lJ/y3N/dzOZw1j1ArSOju0Mcz5vEyn81WsUm+ECIicnkT3Um6Y/+IUW+k7roWKSj1pKTu+kyFPZMuVhikoQZBw==}
@@ -2383,6 +2389,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/cinzel@5.0.13': {}
+
+  '@fontsource-variable/playfair-display@5.0.25': {}
 
   '@fontsource/bebas-neue@5.0.20': {}
 

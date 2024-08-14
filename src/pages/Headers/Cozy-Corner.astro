@@ -1,0 +1,185 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// icons
+import CheckCircle from "../../icons/projects/CheckCircle.astro";
+import Search from "../../icons/projects/Search.astro";
+
+// fonts
+import "@fontsource-variable/playfair-display";
+---
+
+<LayoutProjects
+    title="Cozy Corner - ConquerBlocks | PaulDev"
+    nameProject="Archesky"
+>
+    <div class="w-full h-full text-headers-tercero-letters">
+        <header class="w-11/12 mx-auto flex justify-between items-center py-3">
+            <a href="/Headers/Cozy-Corner" class="font-semibold text-3xl"
+                ><span class="text-headers-tercero-primario">Cozy </span>Corner
+            </a>
+            <nav class="font-medium">
+                <ul class="flex items-center justify-center gap-6">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+            <sidebar class="w-max">
+                <ul class="flex items-center gap-4">
+                    <li>
+                        <a href="#">
+                            <Search class="fill-headers-tercero-letters w-5" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-flex hover:underline" href="#">Sign In</a>
+                    </li>
+                    <li>
+                        <a
+                            class="bg-headers-tercero-primario transition-all duration-300 ease-in-out px-4 py-2 rounded-lg inline-flex text-headers-primero-claro hover:bg-headers-tercero-primario/70 hover:scale-95"
+                            href="#">Sign Up</a
+                        >
+                    </li>
+                </ul>
+            </sidebar>
+        </header>
+
+        <main
+            class="w-11/12 mx-auto grid py-4 items-center"
+            style="grid-template-columns: 1fr 1fr;"
+        >
+            <figure class="w-[120%] h-full">
+                <img
+                    class="w-full object-cover h-full"
+                    src="/imagesProjectsHeaders/hero-cozy.webp"
+                    alt="Icono hero de Cozy Corner"
+                />
+            </figure>
+
+            <article class="bg-red-5 h-full flex items-end">
+                <div class="flex flex-col">
+                    <div
+                        class="flex flex-col gap-4 bg-white/50 backdrop-blur-lg p-6"
+                    >
+                        <h1
+                            class="font-playfair font-semibold text-5xl text-balance"
+                        >
+                            Find your comfort working zone with Cozy Corner
+                        </h1>
+                        <p class="text-headers-primero-paraghap w-11/12">
+                            Change your work environment by using a co-working
+                            place, to meet new people and gain a new network
+                        </p>
+                    </div>
+
+                    <ul
+                        class="grid grid-cols-2 grid-rows-2 gap-y-3 w-full max-w-[410px] pt-8 self-end text-sm"
+                    >
+                        <li>
+                            <CheckCircle
+                                class="fill-headers-tercero-primario w-5"
+                            />
+                            <span>Virtual Office Setup</span>
+                        </li>
+                        <li>
+                            <CheckCircle
+                                class="fill-headers-tercero-primario w-5"
+                            />
+                            <span>Open Workspace</span>
+                        </li>
+                        <li>
+                            <CheckCircle
+                                class="fill-headers-tercero-primario w-5"
+                            />
+                            <span>Space for Event</span>
+                        </li>
+                        <li>
+                            <CheckCircle
+                                class="fill-headers-tercero-primario w-5"
+                            />
+                            <span>Chill Out Zone</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <footer
+            class="w-11/12 mx-auto grid gap-4 pb-4"
+            style="grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));"
+        >
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/location-cozy.webp"
+                        alt="Icon of a location"
+                    />
+                </figure>
+                <h3>20+ Location</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/rooms-cozy.webp"
+                        alt="Icon rooms"
+                    />
+                </figure>
+                <h3>324 Rooms</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/imagesProjectsHeaders/internet-cozy.webp"
+                        alt="Icon of internet"
+                    />
+                </figure>
+                <h3>100% Internet Connected</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </article>
+        </footer>
+    </div>
+</LayoutProjects>
+
+<style>
+    nav {
+        a {
+            @apply transition-colors duration-300 ease-in-out;
+            &:hover {
+                @apply text-headers-tercero-primario;
+            }
+
+            &.active {
+                @apply text-headers-tercero-primario;
+            }
+        }
+    }
+
+    article ul {
+        li {
+            @apply flex items-center gap-2;
+        }
+    }
+
+    footer {
+        article{
+            @apply flex flex-col gap-2 p-3;
+
+            figure{
+                img{
+                    @apply w-12 h-12;
+                }
+            }
+            h3{
+                @apply text-balance font-semibold text-lg;
+            }
+            p{
+                @apply text-balance text-sm text-headers-primero-paraghap;
+            }
+        }
+    }
+</style>
