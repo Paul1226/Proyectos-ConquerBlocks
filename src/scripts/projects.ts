@@ -1,197 +1,174 @@
 export interface Project {
-    title: string;
     aka: string;
     src: string;
     alt: string;
     url: string;
-    logo?: string;
+    bgcolor?: string;
     color?: string;
+    color2?: string;
 }
 
 export const headers: Project[] = [
     {
-        title: "Smart Business with Smart People",
         aka: "Archesky",
         src: "/images/headers/header01.webp",
         alt: "Preview image of the proyect header01",
         url: "/Headers/SmartBusiness",
-        logo: "/iconsHeaders/Archesky.webp",
-        color: "#fff"
+        bgcolor: "#7EDAD2"
     },
     {
-        title: "Creative Agency",
-        aka: "Livia.",
+        aka: "Liv-ia",
         src: "/images/headers/header02.webp",
         alt: "Preview image of the proyect header02",
         url: "/Headers/Creative-Agency",
-        logo: "/iconsHeaders/Livia.webp",
-        color: "#515DEF"
+        bgcolor: "#515DEF",
+        color2: "#1BCFF6"
     },
     {
-        title: "Find Your confort working zone",
-        aka: "CozyCorner",
+        aka: "Cozy-Corner",
         src: "/images/headers/header03.webp",
         alt: "Preview image of the proyect header03",
         url: "/Headers/Cozy-Corner",
-        logo: "/iconsHeaders/Cozy-Corner.webp",
-        color: "#fff"
+        bgcolor: "#f9f9f9",
+        color: "#9B9A78",
+        color2: "#313131"
     },
     {
-        title: "NFT market with exceptionalitems in the bid",
-        aka: "Artzie.",
+        aka: "Art-zie",
         src: "/images/headers/header04.webp",
         alt: "Preview image of the proyect header04",
         url: "/Headers/Artzie",
-        logo: "/iconsHeaders/Artzie.webp",
-        color: "#fff"
+        bgcolor: "#f9f9f9",
+        color: "#FA504D",
+        color2: "#2E2F38"
     },
     {
-        title: "Let your groceries como to you",
-        aka: "FitnestMart",
+        aka: "Fitnest-Mart",
         src: "/images/headers/header05.webp",
         alt: "Preview image of the proyect header05",
         url: "/Headers/Fitnest-Mart",
-        logo: "/iconsHeaders/FinestMart.webp",
-        color: "#fff"
+        bgcolor: "#f9f9f9",
+        color: "#F38160",
+        color2: "#F0B70D"
     },
     {
-        title: "Bring back the beauty and glow of your skin",
-        aka: "GlowQueen",
+        aka: "Glow-Queen",
         src: "/images/headers/header06.webp",    
         alt: "Preview image of the proyect header06",
         url: "/Headers/Glow-Queen",
-        logo: "/iconsHeaders/GlowQueen.webp",
-        color: "#fff"
+        bgcolor: "#f9f9f9",
+        color: "#264065",
+        color2: "#A9D6CB"
     },
     {
-        title: "Build the architecture with art and heart.",
         aka: "Archiflex",
         src: "/images/headers/header07.webp",
         alt: "Preview image of the proyect header07",
         url: "/Headers/Archiflex",
-        logo: "/iconsHeaders/ArchiFlex.webp",
-        color: "#DEDAD5"
+        bgcolor: "#424242"
     },
     {
-        title: "Luxe is here to be your assistance",
         aka: "Luxe",
         src: "/images/headers/header08.webp",
         alt: "Preview image of the proyect header08",
         url: "/Headers/Luxe",
-        logo: "/iconsHeaders/Luxe.webp",
-        color: "#F2DCE8"
+        bgcolor: "#DC0155"
     },
     {
-        title: "Porfolio - Natalie Sihombing",
-        aka: "Arcane",
+        aka: "Arc-ane",
         src: "/images/headers/header09.webp",
         alt: "Preview image of the proyect header09",
         url: "/Headers/Arcane",
-        logo: "/iconsHeaders/Arcane.webp",
-        color: "#EFEFEE"
+        bgcolor: "#f9f9f9",
+        color: "#CAC6BB",
+        color2: "#313131"
     },
     {
-        title: "Build your best community starting from here.",
-        aka: "GathSession",
+        aka: "Gath-Session",
         src: "/images/headers/header10.webp",
         alt: "Preview image of the proyect header10",
         url: "/Headers/Gath-Session",
-        logo: "/iconsHeaders/GathSession.webp",
-        color: "#2B2D38"
+        bgcolor: "#2B2D38",
+        color: "#DB2A6B"
     }
 ]
 export const footers: Project[] =[
     {
-        title: "Maxwell light version",
-        aka: "Maxwell lightmode",
+        aka: "Maxwell-Light",
         src: "/images/footers/footer01.webp",
         alt: "Preview image of the proyect footer01",
         url: "/Footers/Maxwell-Light",
-        logo: "/iconsFooters/MaxwellLight.webp",
-        color: "#fff"
+        bgcolor: "#f9f9f9",
+        color: "#313131",
+        color2: "#87DB1C"
     },
-    {   title: "Maxwell dark version",
-        aka: "Maxwell darkmode",
+    {
+        aka: "Maxwell-Dark",
         src: "/images/footers/footer02.webp",
         alt: "Preview image of the proyect footer02",
         url: "/Footers/Maxwell-Dark",
-        logo: "/iconsFooters/MaxwellDark.webp",
-        color: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(62,100,13,1) 50%, rgba(135,219,28,1) 89%, rgba(135,219,28,1) 89%)"
+        bgcolor: "#050505",
+        color2: "#87DB1C"
     },
     {
-        title: "Profesional web design",
-        aka: "Phone",
+        aka: "Site-Logo",
         src: "/images/footers/footer03.webp",
         alt: "Preview image of the proyect footer03",
         url: "/Footers/Profesional-Web-Design",
-        logo: "/iconsFooters/PhoneLogo.webp",
-        color: "#37383C"
+        bgcolor: "#37383C",
+        color: "#ffffff80"
     },
     {
-        title: "Simple Music Player",
         aka: "Player",
         src: "/images/footers/footer04.webp",
         alt: "Preview image of the proyect footer04",
         url: "/Footers/Simple-Music-Player",
-        logo: "/iconsFooters/SimpleMusic.webp",
-        color: "#22242A"
+        bgcolor: "linear-gradient(90deg, rgba(236,0,140,1) 0%, rgba(252,103,103,1) 100%);"
     },
     {
-        title: "Take good design today",
         aka: "SiteLogo",
         src: "/images/footers/footer05.webp",
         alt: "Preview image of the proyect footer05",
         url: "/Footers/SiteLogo",
-        logo: "/iconsFooters/SiteLogo.webp",
-        color: "#31135E"
+        bgcolor: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)"
     },
     {
-        title: "Social Media Icons",
         aka: "Icons",
         src: "/images/footers/footer06.webp",
         alt: "Preview image of the proyect footer06",
         url: "/Footers/SocialIcons",
-        logo: "/iconsFooters/PhoneLogo.webp",
-        color: "#37383C"
+        bgcolor: "#101010"
     },
 ]
 export const landings: Project[] =[
     {
-        title: "Maximize skill, minimize budget",
         aka: "Skilled",
         src: "/images/landings/landing01.webp",
         alt: "Preview image of the proyect landing01",
         url: "/Landings/Skilled",
-        logo: "/iconsLandings/skilled.webp",
-        color:"#fff"
+        bgcolor:"linear-gradient(0deg, #f02aa6, #ff6f48)"
     },
     {
-        title: "Typemaster Keyboard",
         aka: "Typemaster",
         src: "/images/landings/landing02.webp",
         alt: "Preview image of the proyect landing02",
         url: "/Landings/Typemaster",
-        logo: "/iconsLandings/Typemaster.webp",
-        color:"#fff"
+        bgcolor:"#f16718"
     }
 ]
 export const microsites: Project[] =[
     {
-        title: "Modern Art Gallery",
         aka: "ArtGallery",
         src: "/images/microsites/microsite01.webp",
         alt: "Preview image of the proyect microsites01",
         url: "/Microsites/ModernArtGallery",
-        logo: "/iconsMicroSites/ModernArt.webp",
-        color: "#050505"
+        bgcolor: "#d5966c"
     },
     {
-        title: "Porfolio - Adamkeyes",
         aka: "adamkeyes",
         src: "/images/microsites/microsite02.webp",
         alt: "Preview image of the proyect microsites02",
         url: "/Microsites/Adamkeyes",
-        logo: "/iconsMicroSites/adamkeyes.webp",
-        color: "#050505"
+        bgcolor: "#101010"
     }
 ]

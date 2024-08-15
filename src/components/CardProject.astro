@@ -1,33 +1,46 @@
 ---
 interface Props {
-    title: string;
     aka: string;
     src: string;
     alt: string;
     url: string;
-    icon?: string;
     color?: string;
+    color2?: string;
+    bgcolor?: string
 }
 
-const { title, aka, src, alt, url, icon, color } = Astro.props;
-const bgColor = `bg-[${color}]`;
+const { aka, src, alt, url, color, color2, bgcolor } = Astro.props;
+
+const wordsAka = aka.split("-");
 ---
 
-<article class="rounded-xl w-full bg-smoke-700 border border-smoke-600 p-2">
-    <a class="w-full h-full flex flex-col gap-3 group" href={url}>
-        <figure class="w-full overflow-hidden rounded-lg">
+<article class="rounded-xl w-full bg-smoke-700 border border-smoke-600 p-2 transition-colors duration-300">
+    <a class="w-full h-full relative group overflow-hidden" href={url}>
+        <figure class="w-full overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 ease-in-out group-hover:border-neutral-800" >
             <img
-                class="w-full rounded-lg object-contain transition-all duration-300 group-hover:scale-105 group-hover:brightness-[.3]"
+                class="w-full rounded-lg object-contain transition-all duration-300 group-hover:brightness-75"
                 loading="lazy"
                 src={src}
                 alt={alt}
             />
         </figure>
-        <div class="content">
-            <h2 class=`w-max p-2 rounded-full` style=`background: ${color};`>
-                <img class="h-3 min-w-16 object-contain p-[1px]" src=`${icon}` alt=`Icon de ${aka}` loading="lazy"/>
-            </h2>
-            <span class="text-xs pt-2 inline-block text-neutral-400 font-medium">{title}</span>
-        </div>
+
+        <p class="absolute top-[115%] left-1/2 -translate-x-1/2 px-4 py-2 rounded-full w-max min-w-[120px] inline-flex justify-center opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:top-[calc(100%-18px)] text-white font-medium" style=`background: ${bgcolor}; box-shadow:4px -5px 4px #19191910, -4px -5px 4px #19191910;`
+        >
+            {
+                wordsAka.length > 1 ? (
+                    <span style={`color: ${color}`}>{wordsAka[0]}</span>
+                    <span style ={`color: ${color2};`}>{wordsAka[1]}</span>
+                ) : (
+                    <span>{wordsAka[0]}</span>
+                )
+            }
+        </p>
     </a>
 </article>
+
+<style>
+    article:has(a:hover){
+        @apply bg-smoke-600;
+    }
+</style>

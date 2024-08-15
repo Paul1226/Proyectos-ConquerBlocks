@@ -65,21 +65,20 @@ try{
             class="w-full h-full relative overflow-hidden grid gap-3 pb-16"
             style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
         >
-        <!-- posteriormente se cambiara por el url original -->
             {
-                projectModule.map(({title, aka, src, alt, url, logo, color}) => (
+                projectModule.map(({aka, src, alt, url, bgcolor, color, color2}) => (
                     <CardProject
-                        title={title}
                         aka={aka}
                         src={src}
                         url={url}
                         alt={alt}
-                        icon={logo}
                         color={color}
+                        color2={color2}
+                        bgcolor={bgcolor}
                     />
                 ))
             }
-            <ButtonPages text="Go Home" href="/" nameTransition={typeProject}/>
+            <ButtonPages text="Volver Atrás" href="/" nameTransition={typeProject}/>
         </div>
     </section>
 </Layout>
