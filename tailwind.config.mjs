@@ -29,7 +29,8 @@ export default {
 				poppins: ['Poppins', 'sans-serif'],
 				bebas: ['Bebas Neue', 'cursive'],
 				playfair: ['Playfair Display Variable', 'sans-serif'],
-				belgrano: ['Belgrano', 'serif']
+				belgrano: ['Belgrano', 'serif'],
+				montserrat: ['Montserrat Variable', 'sans-serif'],
 			},
 			colors: {
 				smoke: {
@@ -77,6 +78,11 @@ export default {
 						primario:"#FA504D",
 						letters:"#2E2F38",
 						blur:"#68F3F6"
+					},
+					quinto: {
+						primario:"#F38160",
+						secundario:"#F0B70D",
+						letters:"#403C39"
 					}
 				}
 			}

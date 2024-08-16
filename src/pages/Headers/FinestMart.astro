@@ -1,0 +1,256 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource-variable/montserrat";
+
+// icons
+import Search from "../../icons/projects/Search.astro";
+import CheckCircle from "../../icons/projects/CheckCircle.astro";
+---
+
+<LayoutProjects
+    title="Business Agency - ConquerBlocks | PaulDev"
+    nameProject="Finest Mart"
+>
+    <div class="w-full">
+        <header
+            class="flex justify-between items-center gap-2 text-headers-quinto-letters w-11/12 mx-auto py-2"
+        >
+            <a
+                class="text-2xl font-semibold text-headers-quinto-primario"
+                href="/"
+                >Finest<span class="text-headers-quinto-secundario">Mart</span
+                ></a
+            >
+            <nav>
+                <ul
+                    class="flex items-center gap-3 lg:gap-6"
+                    style="transition:gap 500ms"
+                >
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <aside class="flex items-center gap-4">
+                <a
+                    class="bas relative w-max p-1 rounded-lg
+                before:content-[''] before:absolute before:w-2 before:h-2 before:top-0 before:right-0 before:bg-headers-quinto-primario before:rounded-full before:border-[1px] before:border-solid before:border-headers-quinto-primario/70
+                after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:bg-headers-quinto-letters after:rounded-lg after:text-xs after:w-max after:py-1 after:px-2 after:text-white after:scale-0 after:transition-transform after:duration-300 hover:after:scale-100 after:z-10"
+                    href="#"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 fill-headers-quinto-letters"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        ><path
+                            d="M22.833 6.667h-4.5v-1.2c0-1.273-.632-2.494-1.757-3.394-1.125-.9-2.651-1.406-4.243-1.406-1.591 0-3.117.505-4.242 1.406-1.126.9-1.758 2.12-1.758 3.394v1.2h-4.5c-.398 0-.779.126-1.06.351-.282.225-.44.53-.44.849v13.2c0 .954.474 1.87 1.318 2.545.844.675 1.989 1.055 3.182 1.055h15c1.194 0 2.338-.38 3.182-1.055.844-.675 1.318-1.59 1.318-2.545v-13.2c0-.319-.158-.624-.439-.849a1.709 1.709 0 0 0-1.06-.351Zm-13.5-1.2c0-.637.316-1.247.879-1.697.563-.45 1.326-.703 2.121-.703.796 0 1.559.253 2.122.703.562.45.878 1.06.878 1.697v1.2h-6v-1.2Zm12 15.6c0 .318-.158.623-.439.848a1.709 1.709 0 0 1-1.06.352h-15c-.399 0-.78-.127-1.061-.352-.282-.225-.44-.53-.44-.848v-12h3v1.2c0 .318.158.623.44.848.281.225.662.352 1.06.352s.78-.127 1.061-.352c.281-.225.44-.53.44-.848v-1.2h6v1.2c0 .318.157.623.439.848.281.225.663.352 1.06.352.398 0 .78-.127 1.061-.352.281-.225.44-.53.44-.848v-1.2h3v12Z"
+                        ></path></svg
+                    >
+                </a>
+
+                <a
+                    class="text-headers-quinto-primario hover:underline min-w-max"
+                    href="#">Sign In</a
+                >
+                <a
+                    class="bg-headers-quinto-primario text-white px-4 py-2 rounded-lg min-w-max transition-all duration-300 ease-in-out hover:scale-95 hover:bg-headers-quinto-primario/70"
+                    href="#">Sign Up</a
+                >
+            </aside>
+        </header>
+
+        <main
+            class="w-11/12 mx-auto grid items-center"
+            style="grid-template-columns: 1fr 1.2fr"
+        >
+            <div class="hero-finestmart flex flex-col gap-5">
+                <h1
+                    class="font-montserrat font-bold text-5xl w-[130%] lg:text-6xl xl:text-[4rem]"
+                    style="transition:font-size 500ms "
+                >
+                    Let your&nbsp;<span class="text-headers-quinto-primario"
+                        >groceries</span
+                    > come to you
+                </h1>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Get fresh groceries online without stepping out to make
+                    delicious food with the freshest ingredients
+                </p>
+                <form
+                    class="flex items-center bg-[#D0D0D225] w-full max-w-[250px] rounded-lg overflow-hidden h-10"
+                    action=""
+                >
+                    <input
+                        class="w-full h-full bg-[#D0D0D225] pl-2 outline-none"
+                        type="text"
+                        placeholder="Search here"
+                    />
+                    <button
+                        class="bg-headers-quinto-primario p-2 rounded-sm h-full aspect-square grid place-content-center"
+                        type="submit"
+                    >
+                        <Search class="w-4 fill-white" />
+                    </button>
+                </form>
+                <ul
+                    class="grid grid-cols-2 grid-rows-2 gap-y-2 w-full max-w-[410px] text-sm text-headers-primero-paraghap pt-4"
+                >
+                    <li>
+                        <CheckCircle
+                            class="fill-headers-quinto-secundario w-5"
+                        />
+                        <span>Fresh Vegetables</span>
+                    </li>
+                    <li>
+                        <CheckCircle
+                            class="fill-headers-quinto-secundario w-5"
+                        />
+                        <span>100% Guarantee</span>
+                    </li>
+                    <li>
+                        <CheckCircle
+                            class="fill-headers-quinto-secundario w-5"
+                        />
+                        <span>Cash on Delivery</span>
+                    </li>
+                    <li>
+                        <CheckCircle
+                            class="fill-headers-quinto-secundario w-5"
+                        />
+                        <span>Fast Delivery</span>
+                    </li>
+                </ul>
+            </div>
+            <figure>
+                <img
+                    class="w-full max-w-[500px]"
+                    src="/images/headers/finestMart/hero-finestmart.webp"
+                    alt="Imagen hero de finestmart"
+                />
+            </figure>
+        </main>
+
+        <footer class="w-11/12 mx-auto p-2 grid gap-2" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <article>
+                <figure>
+                    <img
+                        src="/images/headers/finestMart/products-finestmart.webp"
+                        alt="Icono de products"
+                    />
+                </figure>
+                <h4>Dairy Products</h4>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/images/headers/finestMart/vegetables-finestmart.webp"
+                        alt="Icono de vegetables"
+                    />
+                </figure>
+                <h4>Vegetables & Fruits</h4>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/images/headers/finestMart/spices-finestmart.webp"
+                        alt="Icono de spices"
+                    />
+                </figure>
+                <h4>Spices & Seasonings</h4>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/images/headers/finestMart/honey-finestmart.webp"
+                        alt="Icono de honey"
+                    />
+                </figure>
+                <h4>Honey</h4>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </article>
+            <article>
+                <figure>
+                    <img
+                        src="/images/headers/finestMart/flour-finestmart.webp"
+                        alt="Icono de flour"
+                    />
+                </figure>
+                <h4>Flour</h4>
+                <p class="text-headers-primero-paraghap text-balance">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </article>
+        </footer>
+    </div>
+</LayoutProjects>
+
+<style>
+    html{
+        scrollbar-width: thin;
+        scrollbar-color: #f38160 transparent;
+    }
+    .hero-finestmart {
+        ul {
+            li {
+                @apply flex items-center gap-3;
+            }
+        }
+    }
+    nav {
+        ul {
+            a {
+                @apply border-b-2 border-transparent transition-colors duration-300 ease-in-out pb-[2px];
+                &.active {
+                    @apply text-headers-quinto-primario border-headers-quinto-primario;
+                }
+            }
+        }
+    }
+    .bas::before {
+        animation: notificacion 1s linear infinite alternate-reverse;
+    }
+    .bas::after {
+        content: "Shop";
+    }
+
+    footer {
+        article{
+            @apply p-2 rounded-xl transition-shadow duration-300 ease-in-out pb-4;
+
+            &:hover {
+                box-shadow: 0 0 5px #00000020;
+            }
+            h4{
+                @apply text-balance font-medium text-lg pb-2;
+            }
+        }
+    }
+
+    @keyframes notificacion {
+        0% {
+            opacity: 0;
+            scale: 0.7;
+        }
+        100% {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+</style>

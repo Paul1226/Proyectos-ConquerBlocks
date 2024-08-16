@@ -17,6 +17,9 @@ importers:
       '@fontsource-variable/cinzel':
         specifier: ^5.0.13
         version: 5.0.13
+      '@fontsource-variable/montserrat':
+        specifier: ^5.0.19
+        version: 5.0.19
       '@fontsource-variable/playfair-display':
         specifier: ^5.0.25
         version: 5.0.25
@@ -345,6 +348,9 @@ packages:
 
   '@fontsource-variable/cinzel@5.0.13':
     resolution: {integrity: sha512-kRCgDPd/ZcYBw3/GuIv1rgLMRv8AB6QbEhfzrlMTCug21xHOsqsrCqQL55nykqf9g5Z1Fb7tszW6r/8V5pvwbg==}
+
+  '@fontsource-variable/montserrat@5.0.19':
+    resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
 
   '@fontsource-variable/playfair-display@5.0.25':
     resolution: {integrity: sha512-q8tzLiURtXycJQ27YoppTNCEe0W2ZRXIeZ25nH9KoM6fsbWYZAm9ItY0aRoL/jn/GllsEcTSm8H2UKa7l4AxDw==}
@@ -2395,6 +2401,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/cinzel@5.0.13': {}
+
+  '@fontsource-variable/montserrat@5.0.19': {}
 
   '@fontsource-variable/playfair-display@5.0.25': {}
 

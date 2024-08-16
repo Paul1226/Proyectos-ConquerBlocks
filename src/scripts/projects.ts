@@ -11,22 +11,22 @@ export interface Project {
 export const headers: Project[] = [
     {
         aka: "Archesky",
-        src: "/images/headers/header01.webp",
+        src: "/images/headers/archesky/header01.webp",
         alt: "Preview image of the proyect header01",
-        url: "/Headers/SmartBusiness",
+        url: "/Headers/Archesky",
         bgcolor: "#7EDAD2"
     },
     {
         aka: "Liv-ia",
-        src: "/images/headers/header02.webp",
+        src: "/images/headers/livia/header02.webp",
         alt: "Preview image of the proyect header02",
-        url: "/Headers/Creative-Agency",
+        url: "/Headers/Livia",
         bgcolor: "#515DEF",
         color2: "#1BCFF6"
     },
     {
         aka: "Cozy-Corner",
-        src: "/images/headers/header03.webp",
+        src: "/images/headers/cozyCorner/header03.webp",
         alt: "Preview image of the proyect header03",
         url: "/Headers/Cozy-Corner",
         bgcolor: "#f9f9f9",
@@ -35,7 +35,7 @@ export const headers: Project[] = [
     },
     {
         aka: "Art-zie",
-        src: "/images/headers/header04.webp",
+        src: "/images/headers/artzie/header04.webp",
         alt: "Preview image of the proyect header04",
         url: "/Headers/Artzie",
         bgcolor: "#f9f9f9",
@@ -44,16 +44,16 @@ export const headers: Project[] = [
     },
     {
         aka: "Fitnest-Mart",
-        src: "/images/headers/header05.webp",
+        src: "/images/headers/finestMart/header05.webp",
         alt: "Preview image of the proyect header05",
-        url: "/Headers/Fitnest-Mart",
+        url: "/Headers/FinestMart",
         bgcolor: "#f9f9f9",
         color: "#F38160",
         color2: "#F0B70D"
     },
     {
         aka: "Glow-Queen",
-        src: "/images/headers/header06.webp",    
+        src: "/images/headers/glowQueen/header06.webp",    
         alt: "Preview image of the proyect header06",
         url: "/Headers/Glow-Queen",
         bgcolor: "#f9f9f9",
@@ -62,21 +62,21 @@ export const headers: Project[] = [
     },
     {
         aka: "Archiflex",
-        src: "/images/headers/header07.webp",
+        src: "/images/headers/archiflex/header07.webp",
         alt: "Preview image of the proyect header07",
         url: "/Headers/Archiflex",
         bgcolor: "#424242"
     },
     {
         aka: "Luxe",
-        src: "/images/headers/header08.webp",
+        src: "/images/headers/luxe/header08.webp",
         alt: "Preview image of the proyect header08",
         url: "/Headers/Luxe",
         bgcolor: "#DC0155"
     },
     {
         aka: "Arc-ane",
-        src: "/images/headers/header09.webp",
+        src: "/images/headers/arcane/header09.webp",
         alt: "Preview image of the proyect header09",
         url: "/Headers/Arcane",
         bgcolor: "#f9f9f9",
@@ -85,7 +85,7 @@ export const headers: Project[] = [
     },
     {
         aka: "Gath-Session",
-        src: "/images/headers/header10.webp",
+        src: "/images/headers/gathSession/header10.webp",
         alt: "Preview image of the proyect header10",
         url: "/Headers/Gath-Session",
         bgcolor: "#2B2D38",
