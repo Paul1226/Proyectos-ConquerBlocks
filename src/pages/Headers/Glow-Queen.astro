@@ -1,0 +1,258 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// icons
+import Search from "../../icons/projects/Search.astro";
+---
+
+<LayoutProjects
+    title="Glow Queens - ConquerBlocks | PaulDev"
+    nameProject="Glow Queen"
+>
+    <div class="w-full relative">
+        <!-- header -->
+        <header
+            class="absolute top-0 left-1/2 -translate-x-1/2 z-50 flex justify-between items-center gap-2 text-headers-sexto-primario w-11/12 py-2 text-sm"
+        >
+            <a
+                class="text-2xl font-semibold text-headers-sexto-primario"
+                href="/Headers/Glow-Queen"
+                >Glow<span class="text-headers-sexto-secundario">Queen</span></a
+            >
+            <nav>
+                <ul
+                    class="flex items-center gap-3 lg:gap-6"
+                    style="transition:gap 500ms"
+                >
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+            <aside
+                class="flex items-center gap-2 lg:gap-4"
+                style="transition:gap 500ms"
+            >
+                <a class="relative w-max p-1 rounded-lg" href="#">
+                    <Search class="fill-headers-sexto-primario w-5" />
+                </a>
+                <a class="relative w-max p-1 rounded-lg" href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 fill-headers-sexto-primario"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        ><path
+                            d="M22.833 6.667h-4.5v-1.2c0-1.273-.632-2.494-1.757-3.394-1.125-.9-2.651-1.406-4.243-1.406-1.591 0-3.117.505-4.242 1.406-1.126.9-1.758 2.12-1.758 3.394v1.2h-4.5c-.398 0-.779.126-1.06.351-.282.225-.44.53-.44.849v13.2c0 .954.474 1.87 1.318 2.545.844.675 1.989 1.055 3.182 1.055h15c1.194 0 2.338-.38 3.182-1.055.844-.675 1.318-1.59 1.318-2.545v-13.2c0-.319-.158-.624-.439-.849a1.709 1.709 0 0 0-1.06-.351Zm-13.5-1.2c0-.637.316-1.247.879-1.697.563-.45 1.326-.703 2.121-.703.796 0 1.559.253 2.122.703.562.45.878 1.06.878 1.697v1.2h-6v-1.2Zm12 15.6c0 .318-.158.623-.439.848a1.709 1.709 0 0 1-1.06.352h-15c-.399 0-.78-.127-1.061-.352-.282-.225-.44-.53-.44-.848v-12h3v1.2c0 .318.158.623.44.848.281.225.662.352 1.06.352s.78-.127 1.061-.352c.281-.225.44-.53.44-.848v-1.2h6v1.2c0 .318.157.623.439.848.281.225.663.352 1.06.352.398 0 .78-.127 1.061-.352.281-.225.44-.53.44-.848v-1.2h3v12Z"
+                        ></path></svg
+                    >
+                </a>
+
+                <a
+                    class="text-headers-sexto-primario hover:underline min-w-max"
+                    href="#">Sign In</a
+                >
+                <a
+                    class="bg-headers-sexto-primario text-white px-4 py-2 rounded-full min-w-max transition-all duration-300 ease-in-out hover:scale-95 hover:bg-headers-sexto-primario/70"
+                    href="#">Sign Up</a
+                >
+            </aside>
+        </header>
+
+        <!-- Main -->
+        <main class="grid grid-cols-3 items-center min-h-[450px] h-full">
+            <section class="w-11/12 ml-auto col-span-2">
+                <div class="flex flex-col gap-3 relative z-10">
+                    <h1
+                        class="text-headers-sexto-primario font-bold text-4xl text-balance lg:text-5xl"
+                        style="transition: font-size 0.5s"
+                    >
+                        Bring back the beauty and glow of your skin
+                    </h1>
+                    <p
+                        class="text-headers-primero-paraghap text-balance w-10/12"
+                    >
+                        We provide you various treatments from head to toe using
+                        the best product, advanced technology, and affordable
+                        price
+                    </p>
+                    <div
+                        class="buttons text-headers-sexto-primario inline-flex items-center gap-4"
+                    >
+                        <a
+                            class="bg-headers-sexto-primario text-white px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:scale-95 hover:bg-headers-sexto-primario/70"
+                            href="#">Book Now</a
+                        >
+                        <a class="flex gap-2 items-center" href="#">
+                            <svg
+                                class="w-4 fill-headers-sexto-primario p-2 bg-white rounded-full box-content"
+                                style="box-shadow: 0 8px 10px #00000050;"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M20.492 7.969 10.954.975A5 5 0 0 0 3 5.005V19a4.994 4.994 0 0 0 7.954 4.03l9.538-6.994a5 5 0 0 0 0-8.062Z"
+                                ></path></svg
+                            >
+                            <span>Watch Video</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="w-full bg-headers-sexto-secundario h-full relative overflow-hidden"
+            >
+                <figure class="absolute w-full h-full top-0 -left-1/3">
+                    <img
+                        class="w-full h-full min-w-[400px]"
+                        src="/images/headers/glowQueen/bg-queen.webp"
+                        alt="Imagen background de glow queen"
+                        loading="lazy"
+                    />
+                </figure>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="absolute top-12 grid w-full"
+            style="grid-template-columns: 1fr 1.25fr;"
+        >
+            <div
+                class="hero-queen text-headers-sexto-primario flex items-center justify-between gap-2 h-max self-end text-sm w-full pl-14 max-w-[500px]"
+            >
+                <article>
+                    <figure>
+                        <img
+                            src="/images/headers/glowQueen/special-queen.webp"
+                            alt="icono de special queen"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <h3>15+</h3>
+                    <p>Special treatment</p>
+                </article>
+                <article>
+                    <figure>
+                        <img
+                            src="/images/headers/glowQueen/professional-queen.webp"
+                            alt="icono de professional queen"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <h3>25+</h3>
+                    <p>Professional Therapist</p>
+                </article>
+                <article>
+                    <figure>
+                        <img
+                            src="/images/headers/glowQueen/herbal-queen.webp"
+                            alt="icono de herbal queen"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <h3>100%</h3>
+                    <p>Herbal Cream&nbsp;Formula</p>
+                </article>
+            </div>
+            <div class="overflow-hidden relative">
+                <figure class="w-max">
+                    <img
+                        class="w-full h-full max-h-[550px] object-contain"
+                        src="/images/headers/glowQueen/hero-queen.webp"
+                        alt="Imagen principal de glow queen"
+                        loading="lazy"
+                    />
+                </figure>
+
+                <div class="cards absolute bottom-4 right-0 lg:right-4 w-full" style="transition:right 0.5s">
+                    <div class="first-card">
+                        <figure>
+                            <svg
+                                class="w-6 fill-headers-sexto-primario"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 21"
+                                fill="none"
+                            >
+                                <path
+                                    d="M10.1053 21H0L9.51084 0H15.9505L10.1053 21ZM26.1548 21H16.0495L25.5604 0H32L26.1548 21Z"
+                                ></path>
+                            </svg>
+                        </figure>
+                        <p>
+                            I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin
+                        </p>
+                        <span>Sophia Princeton</span>
+                    </div>
+                    <div class="second-card">
+                        <figure>
+                            <svg
+                                class="w-6 fill-headers-sexto-primario"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 21"
+                                fill="none"
+                            >
+                                <path
+                                    d="M10.1053 21H0L9.51084 0H15.9505L10.1053 21ZM26.1548 21H16.0495L25.5604 0H32L26.1548 21Z"
+                                ></path>
+                            </svg>
+                        </figure>
+                        <p>
+                            For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin
+                        </p>
+                        <span>Tamara Jules</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</LayoutProjects>
+
+<style>
+    html{
+        scrollbar-width: thin;
+        scrollbar-color: #264065 transparent;
+    }
+    footer {
+        .hero-queen {
+            article {
+                @apply flex flex-col items-center gap-5 bg-white p-2 rounded-lg h-full w-max max-w-[135px] transition-shadow duration-300 ease-in-out;
+
+                &:hover {
+                    box-shadow: 0 0 15px #26406510;
+                }
+                figure {
+                    img {
+                        @apply max-w-14 w-full;
+                    }
+                }
+                h3 {
+                    @apply font-semibold text-3xl;
+                }
+                p {
+                    @apply text-headers-primero-paraghap text-center;
+                }
+            }
+        }
+
+        .cards {
+            @apply flex flex-col gap-6 w-full;
+
+            .first-card, .second-card {
+                @apply flex flex-col gap-2 bg-white/50 backdrop-blur-sm p-2 rounded-xl h-full w-full max-w-[350px] text-headers-sexto-letters;
+
+                span {
+                    @apply font-bold text-headers-sexto-primario text-xl;
+                }
+            }
+
+            .first-card {
+                @apply self-end;
+            }
+            .second-card {
+                @apply self-center;
+            }       
+        }
+    }
+</style>

@@ -83,7 +83,12 @@ export default {
 						primario:"#F38160",
 						secundario:"#F0B70D",
 						letters:"#403C39"
-					}
+					},
+					sexto: {
+						primario:"#264065",
+						secundario:"#A9D6CB",
+						letters:"#070D15"
+					},
 				}
 			}
 		},
