@@ -20,6 +20,9 @@ importers:
       '@fontsource-variable/montserrat':
         specifier: ^5.0.19
         version: 5.0.19
+      '@fontsource-variable/oswald':
+        specifier: ^5.0.21
+        version: 5.0.21
       '@fontsource-variable/playfair-display':
         specifier: ^5.0.25
         version: 5.0.25
@@ -32,6 +35,9 @@ importers:
       '@fontsource/poppins':
         specifier: ^5.0.14
         version: 5.0.14
+      '@fontsource/quattrocento':
+        specifier: ^5.0.22
+        version: 5.0.22
       astro:
         specifier: ^4.13.3
         version: 4.13.3(typescript@5.5.4)
@@ -352,6 +358,9 @@ packages:
   '@fontsource-variable/montserrat@5.0.19':
     resolution: {integrity: sha512-vOlVjdGock2yBOeBbg5qexPa1TJM/PS8Nx9YlF6DFEtFf/Y5ayDbZRvV/WPj8W2vk7/aDxUEtTAp/Qp8wK9hNQ==}
 
+  '@fontsource-variable/oswald@5.0.21':
+    resolution: {integrity: sha512-3D/wtYcDHXHC0V81uYqQp1FCc+R1U1TUWvI9c6Gkc+2C0xEXQH81kYuG8a7uXlHKXbE/SYUuTT1GEJtUlwbikg==}
+
   '@fontsource-variable/playfair-display@5.0.25':
     resolution: {integrity: sha512-q8tzLiURtXycJQ27YoppTNCEe0W2ZRXIeZ25nH9KoM6fsbWYZAm9ItY0aRoL/jn/GllsEcTSm8H2UKa7l4AxDw==}
 
@@ -363,6 +372,9 @@ packages:
 
   '@fontsource/poppins@5.0.14':
     resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
+
+  '@fontsource/quattrocento@5.0.22':
+    resolution: {integrity: sha512-JOFSOYT4YIDOFnGyJl/NZvaX7gfJXG2LgI1zpuVcGFPdrQXHaHpSfqceSUVrtb7PdsGg5/HC920sgHBhCZ1E+g==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -2404,6 +2416,8 @@ snapshots:
 
   '@fontsource-variable/montserrat@5.0.19': {}
 
+  '@fontsource-variable/oswald@5.0.21': {}
+
   '@fontsource-variable/playfair-display@5.0.25': {}
 
   '@fontsource/bebas-neue@5.0.20': {}
@@ -2411,6 +2425,8 @@ snapshots:
   '@fontsource/belgrano@5.0.12': {}
 
   '@fontsource/poppins@5.0.14': {}
+
+  '@fontsource/quattrocento@5.0.22': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:

@@ -14,10 +14,12 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/cinzel": "^5.0.13",
     "@fontsource-variable/montserrat": "^5.0.19",
+    "@fontsource-variable/oswald": "^5.0.21",
     "@fontsource-variable/playfair-display": "^5.0.25",
     "@fontsource/bebas-neue": "^5.0.20",
     "@fontsource/belgrano": "^5.0.12",
     "@fontsource/poppins": "^5.0.14",
+    "@fontsource/quattrocento": "^5.0.22",
     "astro": "^4.13.3",
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4"

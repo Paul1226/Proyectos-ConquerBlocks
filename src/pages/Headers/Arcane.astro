@@ -1,0 +1,282 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource-variable/oswald";
+import "@fontsource/quattrocento";
+
+// icons
+import Linkedin404 from "../../icons/404Icons/Linkedin404.astro";
+import Twitter404 from "../../icons/404Icons/Twitter404.astro";
+import Instagram404 from "../../icons/404Icons/Instagram404.astro";
+import Facebook404 from "../../icons/404Icons/Facebook404.astro";
+---
+
+<LayoutProjects title="Arcane - ConquerBlocks | PaulDev" nameProject="Arcane">
+    <div class="w-full relative text-headers-tercero-letters h-full">
+        <div
+            class="fixed inset-0 w-full h-full -z-10"
+            style="
+            background-color: #EFEFEE;
+            background-image: url(/images/headers/arcane/bg-page-arcane.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            "
+        >
+        </div>
+
+        <!-- header -->
+        <header
+            class="grid grid-cols-3 items-center w-11/12 mx-auto py-3 font-quattrocento"
+        >
+            <nav class="">
+                <ul class="flex items-center gap-6">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <logo class="flex justify-center">
+                <a
+                    class="text-3xl font-bold font-oswald w-max"
+                    href="/Headers/Arcane"
+                    >Arc<span class="text-headers-primero-paraghap">ane</span
+                    ></a
+                >
+            </logo>
+            <aside class="flex justify-end">
+                <ul class="flex items-center gap-4">
+                    <li>
+                        <a
+                            class="w-8 h-8 flex justify-center items-center"
+                            href="#"
+                            ><Instagram404
+                                class="w-full h-full fill-headers-tercero-letters"
+                            /></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="w-6 h-6 flex justify-center items-center"
+                            href="#"
+                            ><Facebook404
+                                class="w-full h-full fill-headers-tercero-letters"
+                            /></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="w-7 h-7 flex justify-center items-center"
+                            href="#"
+                            ><Twitter404
+                                class="w-full h-full fill-headers-tercero-letters"
+                            /></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="w-7 h-7 flex justify-center items-center"
+                            href="#"
+                            ><Linkedin404
+                                class="w-full h-full fill-headers-tercero-letters"
+                            /></a
+                        >
+                    </li>
+                </ul>
+            </aside>
+        </header>
+
+        <!-- main -->
+        <main class="grid grid-cols-3 items-end pt-6">
+            <services class="w-[90%] ml-auto pb-5">
+                <h2 class="text-2xl font-oswald font-semibold pb-5">
+                    Services
+                </h2>
+                <section class="services-section flex flex-col gap-4">
+                    <article>
+                        <div>
+                            <figure>
+                                <img
+                                    class="bg-white rounded-lg"
+                                    src="/images/headers/arcane/development-arcane.webp"
+                                    alt="icono de web development"
+                                    loading="lazy"
+                                />
+                            </figure>
+                            <h3>Web Development</h3>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </article>
+
+                    <article>
+                        <div>
+                            <figure>
+                                <img
+                                    class="bg-white rounded-lg"
+                                    src="/images/headers/arcane/design-arcane.webp"
+                                    alt="icono de web design"
+                                    loading="lazy"
+                                />
+                            </figure>
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </article>
+
+                    <article>
+                        <div>
+                            <figure>
+                                <img
+                                    class="bg-white rounded-lg"
+                                    src="/images/headers/arcane/consulting-arcane.webp"
+                                    alt="icono de web consulting"
+                                    loading="lazy"
+                                />
+                            </figure>
+                            <h3>Web Consulting</h3>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </article>
+                </section>
+            </services>
+
+            <hero-main class="">
+                <div class="flex flex-col gap- items-center relative">
+                    <h1
+                        class="font-oswald font-semibold text-4xl lg:text-5xl xl:text-[3.5rem] relative before:content-[''] before:w-12 before:h-1 before:bg-headers-noveno-primario before:absolute before:-bottom-3 before:left-0 before:z-0 before:rounded-full"
+                        style="transition: font-size 0.5s"
+                    >
+                        Natalie Sihombing
+                    </h1>
+                    <figure
+                        class="w-4/5 max-w-[310px] h-full mx-auto relative z-10"
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src="/images/headers/arcane/hero-arcane.webp"
+                            alt="Imagen principal de arcane"
+                            loading="lazy"
+                        />
+                    </figure>
+                    <div
+                        class="absolute bottom-0 w-11/12 mx-auto h-1/2 rounded-t-xl border border-b-0 border-headers-noveno-borders"
+                    >
+                        <div
+                            class="absolute inset-3 bottom-0 bg-headers-noveno-primario rounded-t-xl"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </hero-main>
+
+            <specialist class="w-11/12 ml-2 pb-5">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl font-oswald font-semibold text-balance">Web Specialist based in Jakarta</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <a class="inline-flex w-max px-4 py-3 rounded-md bg-headers-tercero-letters text-white font-quattrocento transition-all duration-300 ease-in-out hover:scale-95 hover:bg-headers-tercero-letters/70" href="#">Hire Me</a>
+                    <article class="flex justify-between items-center w-full max-w-[280px] pt-8 lg:pt-14 xl:pt-20" style="transition: padding 500ms">
+                        <div class="s">
+                            <h3>13 Years</h3>
+                            <p>Experience</p>
+                        </div>
+                        <div class="s">
+                            <h3>256+</h3>
+                            <p>Clients</p>
+                        </div>
+                        <div class="s">
+                            <h3>99.8%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </article>
+                </div>
+            </specialist>
+        </main>
+    </div>
+</LayoutProjects>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #313131 #EFEFEE;
+    }
+    nav {
+        a {
+            position: relative;
+            padding-bottom: 6px;
+
+            &.active::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60%;
+                height: 2px;
+                background-color: #cac6bb;
+            }
+        }
+    }
+
+    aside{
+        li{
+            a{  
+                transition: scale 150ms ease-in-out;
+                &:hover{
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+
+    .services-section {
+        article {
+            div {
+                @apply flex items-center gap-3 pb-3;
+                figure {
+                    img {
+                        box-shadow: 0px 10px 10px #00000020;
+                    }
+                }
+
+                h3 {
+                    @apply font-oswald font-semibold text-xl;
+                }
+            }
+            p {
+                transition: font-size 0.5s;
+                @apply text-headers-primero-paraghap font-quattrocento text-balance w-4/5 text-sm lg:text-base;
+            }
+        }
+    }
+
+    specialist {
+        p{
+            transition: font-size 0.5s;
+            @apply text-headers-primero-paraghap font-quattrocento text-pretty text-sm lg:text-base;
+        }
+        article{
+            h3{
+                @apply font-oswald font-semibold text-xl;
+            }
+        }
+    }
+</style>

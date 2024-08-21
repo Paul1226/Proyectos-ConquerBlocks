@@ -31,6 +31,8 @@ export default {
 				playfair: ['Playfair Display Variable', 'sans-serif'],
 				belgrano: ['Belgrano', 'serif'],
 				montserrat: ['Montserrat Variable', 'sans-serif'],
+				oswald: ['Oswald Variable', 'sans-serif'],
+				quattrocento: ['Quattrocento', 'serif'],
 			},
 			colors: {
 				smoke: {
@@ -95,6 +97,10 @@ export default {
 					octavo:{
 						primario:"#DC0155",
 						letters:"#333333"
+					},
+					noveno:{
+						primario:"#CAC6BB",
+						borders:"#CAC6BB"
 					}
 				}
 			}
