@@ -91,6 +91,10 @@ export default {
 					},
 					septimo: {
 						primario:"#DEDAD5",
+					},
+					octavo:{
+						primario:"#DC0155",
+						letters:"#333333"
 					}
 				}
 			}
