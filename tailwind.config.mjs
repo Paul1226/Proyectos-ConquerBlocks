@@ -89,6 +89,9 @@ export default {
 						secundario:"#A9D6CB",
 						letters:"#070D15"
 					},
+					septimo: {
+						primario:"#DEDAD5",
+					}
 				}
 			}
 		},

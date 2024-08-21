@@ -1,0 +1,223 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource-variable/playfair-display";
+---
+
+<LayoutProjects
+    title="Archiflex - ConquerBlocks | PaulDev"
+    nameProject="Archiflex"
+>
+    <div class="relative">
+        <div
+            id="contextMenu"
+            class="w-[250px] rounded-lg fixed bg-white p-2 z-50 hidden"
+            style="box-shadow: 0 0 10px #00000030;"
+        >
+            <h4>Our Service</h4>
+            <ol class="flex flex-col gap-2 p-2 list-decimal" style="list-style-type: decimal">
+                <li class="">
+                    <span>Interior Design</span>
+                    <svg
+                        class="w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        ><path
+                            d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                        ></path></svg
+                    >
+                </li>
+                <li>
+                    <span>Architecture</span>
+                    <svg
+                        class="w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        ><path
+                            d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                        ></path></svg
+                    >
+                </li>
+                <li>
+                    <span>Real Estate</span>
+                    <svg
+                        class="w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        ><path
+                            d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                        ></path></svg
+                    >
+                </li>
+            </ol>
+        </div>
+        <header
+            class="flex items-center justify-between absolute top-0 left-1/2 -translate-x-1/2 w-11/12 py-4 z-40"
+        >
+            <a class="text-2xl font-semibold" href="/Headers/Archiflex"
+                >Archiflex</a
+            >
+
+            <nav>
+                <ul
+                    class="flex items-center gap-4 lg:gap-6"
+                    style="transition:gap 500ms"
+                >
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Room Tour</a></li>
+                    <li><a href="#">New Development</a></li>
+                    <li><a href="#">Galleries</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <aside></aside>
+        </header>
+
+        <main class="grid grid-cols-2 items-center min-h-[650px]">
+            <div class="relative h-full">
+                <div
+                    class="w-11/12 ml-auto flex flex-col gap-4 relative z-30 h-full justify-center"
+                >
+                    <h1
+                        class="text-4xl font-playfair font-medium text-balance lg:text-5xl xl:text-[3.5rem]"
+                        style="transition: font-size 0.5s"
+                    >
+                        Build the architecture with art and heart.
+                    </h1>
+                    <p class="text-headers-primero-paraghap w-10/12">
+                        Not only building an artistic architectural building but
+                        also understanding the function and people who will use
+                        it
+                    </p>
+                    <div
+                        class="links inline-flex items-center gap-4 w-full max-w-[300px]"
+                    >
+                        <a
+                            class="bg-headers-sexto-letters text-white flex justify-center w-full py-2 rounded-lg transition-all duration-300 ease-in-out hover:bg-headers-sexto-letters/70 hover:scale-95"
+                            href="#">Get Started</a
+                        >
+                        <a class="flex w-full" href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <section
+                    class="absolute bottom-0 flex justify-between w-10/12 right-8 p-2"
+                >
+                    <article>
+                        <h3>321</h3>
+                        <p>Projects completados</p>
+                    </article>
+                    <article>
+                        <h3>25</h3>
+                        <p>Awards</p>
+                    </article>
+                    <article>
+                        <h3>31</h3>
+                        <p>Experts</p>
+                    </article>
+                    <article>
+                        <h3>15</h3>
+                        <p>Years Experience</p>
+                    </article>
+                </section>
+            </div>
+            <div class="w-full h-full bg-headers-septimo-primario relative">
+                <div
+                    class="absolute flex items-center gap-6 top-1/2 -translate-y-1/2 left-[-25%]"
+                >
+                    <figure>
+                        <img
+                            src="/images/headers/archiflex/hero1-archiflex.webp"
+                            alt="Imagen hero1 de archiflex"
+                        />
+                    </figure>
+                    <figure>
+                        <img
+                            src="/images/headers/archiflex/hero2-archiflex.webp"
+                            alt="Imagen hero1 de archiflex"
+                        />
+                    </figure>
+                </div>
+            </div>
+        </main>
+    </div>
+</LayoutProjects>
+
+<style>
+    html{
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #070D15 transparent;
+    }
+    ol {
+        list-style-type: decimal;
+
+        li {
+            @apply flex items-center gap-2 justify-between py-2 border-b-2 border-transparent cursor-pointer;
+        }
+
+        li:has(+ li) {
+            @apply border-headers-primero-paraghap/30;
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    @apply text-headers-primero-paraghap;
+
+                    &.active {
+                        @apply text-headers-primero-letters;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        section {
+            article {
+                @apply w-min flex flex-col gap-1 items-center;
+
+                h3 {
+                    @apply text-balance text-3xl font-medium;
+                }
+                p {
+                    @apply text-pretty text-headers-primero-paraghap;
+                }
+            }
+        }
+    }
+
+    img {
+        @apply w-full h-full object-cover max-w-[290px] rounded-lg shadow-2xl;
+    }
+</style>
+
+<script>
+    document.addEventListener("contextmenu", (event: MouseEvent) => {
+    event.preventDefault();
+    
+    const contextMenu = document.getElementById("contextMenu") as HTMLDivElement | null;
+    
+    if (contextMenu) {
+        // Mostrar el div en la posición del clic derecho
+        contextMenu.style.top = `${event.clientY}px`;
+        contextMenu.style.left = `${event.clientX}px`;
+        contextMenu.classList.remove("hidden");
+    }
+});
+
+document.addEventListener("click", () => {
+    const contextMenu = document.getElementById("contextMenu") as HTMLDivElement | null;
+    
+    if (contextMenu) {
+        // Ocultar el div al hacer clic izquierdo
+        contextMenu.classList.add("hidden");
+    }
+});
+
+</script>
