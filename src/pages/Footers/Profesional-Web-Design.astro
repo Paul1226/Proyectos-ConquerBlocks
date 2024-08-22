@@ -1,0 +1,196 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource/poppins/200.css";
+---
+
+<LayoutProjects
+    title="Phone - ConquerBlocks | PaulDev"
+    nameProject="Maxwell Dark"
+>
+    <div class="fixed inset bg-[#222] w-full h-full -z-10"></div>
+
+    <footer
+        class="bg-footers-tercero-bgPhone text-white fixed bottom-0 w-full flex flex-col pt-12"
+        style="box-shadow: 0px -15px 12px #00000020;"
+    >
+        <div class="grid grid-cols-3 font-extralight w-11/12 mx-auto gap-8">
+            <subscription class="flex flex-col gap-6">
+                <h3 class="text-xl uppercase font-semibold">subscribe</h3>
+                <p>
+                    Subscribe to stay tuned for new web design and latest
+                    updates. Let's do it!
+                </p>
+                <form action="" class="flex gap-2">
+                    <input
+                        class="w-full outline-none bg-[#E5E7EB20] pl-4 rounded-md"
+                        type="email"
+                        name="email"
+                        id="email-phone"
+                        placeholder="Enter your email Address"
+                    />
+                    <button
+                        class="bg-footers-tercero-primario px-4 py-3 border border-black bg-white text-black font-normal rounded-md transition-all duration-300 hover:scale-95"
+                        type="submit">Subscribe</button
+                    >
+                </form>
+
+                <ul class="inline-flex items-center gap-6">
+                    <li>
+                        <a href="#">
+                            <img
+                                src="/images/footers/phone/facebook-phone.webp"
+                                alt="Icono de Facebook"
+                                loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="/images/footers/phone/figma-phone.webp"
+                                alt="Icono de figma"
+                                loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="/images/footers/phone/instagram-phone.webp"
+                                alt="Icono de instagram"
+                                loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="/images/footers/phone/telegram-phone.webp"
+                                alt="Icono de telegram"
+                                loading="lazy"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </subscription>
+
+            <hero-main class="">
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-xl uppercase font-semibold">
+                        Professional Web Design
+                    </h3>
+                    <p>
+                        Hi! My name ia Dmitrii Rogoza and i’m an expert in web
+                        design and branding. I can help you make your website
+                        more attractive
+                    </p>
+
+                    <article class="flex justify-between">
+                        <div class="i">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="#">Landing Page</a></li>
+                                <li><a href="#">Popup Builder</a></li>
+                                <li><a href="#">Web-design</a></li>
+                                <li><a href="#">Content</a></li>
+                                <li><a href="#">Integrations</a></li>
+                            </ul>
+                        </div>
+                        <div class="i">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Teams</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </hero-main>
+
+            <figure class="w-full">
+                <img
+                    class="w-full h-full object-cover"
+                    src="/images/footers/phone/hero-phone.webp"
+                    alt="Imagen hero de footer de Phone"
+                    loading="lazy"
+                />
+            </figure>
+        </div>
+
+        <section class="flex items-center justify-between gap-5 h-16 w-11/12 mx-auto border-y-2 border-white/50">
+            <div class="flex items-center justify-between w-full max-w-[650px]">
+                <figure class="">
+                    <img src="/images/footers/phone/logo-phone.webp" alt="Logo de Phone">
+                </figure>
+                <p class="font-extralight" style="color: white;">Wisconsin Ave, Suite 700 Chevy Chase, Maryland 20815</p>
+            </div>
+            <p class="min-w-max">+1 800 854-36-80</p>
+        </section>
+
+        <section class="w-11/12 mx-auto h-16 flex items-center justify-between gap-3 section-ultimate">
+            <p>© 2021 All Rights Reserved</p>
+            <ul class="flex items-center gap-4 text-white/50 font-extralight">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </section>
+    </footer>
+</LayoutProjects>
+
+<style>
+    p {
+        @apply text-white/50;
+    }
+
+    subscription {
+        ul {
+            li {
+                a {
+                    img {
+                        @apply w-12 h-12 object-cover transition-all duration-300 ease-in-out hover:scale-90;
+                    }
+                }
+            }
+        }
+    }
+
+    hero-main {
+        h4 {
+            @apply font-semibold;
+        }
+        ul {
+            @apply flex flex-col gap-2;
+            li {
+                @apply text-white/50;
+
+                a {
+                    @apply transition-colors duration-300 ease-in-out;
+                    &:hover {
+                        @apply text-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-ultimate {
+        ul {
+            li{
+                a{
+                    @apply transition-colors duration-300 ease-in-out;
+                    &:hover {
+                        @apply text-white;
+                    }
+                }
+            }
+        }
+    }
+</style>

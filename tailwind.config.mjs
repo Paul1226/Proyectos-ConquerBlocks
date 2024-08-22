@@ -117,6 +117,9 @@ export default {
 						backg:"#CBED9F",
 						primario:"#87DB1C",
 						letters:"#040505"
+					},
+					tercero:{
+						bgPhone: "#37383C",
 					}
 				}
 			}
