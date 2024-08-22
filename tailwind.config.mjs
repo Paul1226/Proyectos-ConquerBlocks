@@ -120,6 +120,9 @@ export default {
 					},
 					tercero:{
 						bgPhone: "#37383C",
+					},
+					cuarto: {
+						backg: "#22242A",
 					}
 				}
 			}
