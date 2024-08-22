@@ -50,3 +50,15 @@ import LayoutProjects from "../../layouts/LayoutProjects.astro";
         </nav>
     </footer>
 </LayoutProjects>
+
+<style>
+    nav ul li {
+        a{
+            @apply transition-colors duration-300 ease-in-out;
+
+            &:hover {
+                @apply text-footers-primero-primario;
+            }
+        }
+    }
+</style>
