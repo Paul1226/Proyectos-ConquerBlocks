@@ -1,0 +1,52 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+---
+
+<LayoutProjects
+    title="Maxwell Dark - ConquerBlocks | PaulDev"
+    nameProject="Maxwell Dark"
+>
+    <div class="fixed inset bg-[#222] w-full h-full -z-10"></div>
+
+    <footer
+        class="bg-black text-white fixed bottom-0 w-full flex flex-col gap-12 py-10 border-b-8 border-footers-primero-primario"
+        style="box-shadow: 0px -15px 12px #87db1c10;"
+    >
+        <div class="flex flex-col gap-5 items-center justify-center">
+            <figure class="flex items-center gap-3">
+                <img
+                    src="/images/footers/maxwell-light/logo-maxwell.webp"
+                    alt="Logo de la página principal de Maxwell"
+                    loading="lazy"
+                />
+                <h3 class="text-xl font-medium">Maxwell</h3>
+            </figure>
+            <h2 class="text-3xl text-balance text-center font-semibold">
+                Get started to up your business<br /> with personal AI manager
+            </h2>
+            <form action="" class="flex items-center gap-3">
+                <input
+                    class="py-2 px-3 bg-transparent rounded-full placeholder:text-white/70 border border-white/20 outline-0 placeholder:pl-3"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                />
+                <button class="py-2 px-4 bg-footers-primero-primario rounded-full text-black font-medium" type="submit">Try Now</button>
+            </form>
+        </div>
+
+        <nav>
+            <ul class="flex items-center justify-center gap-4 flex-wrap text-white/80 ">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Plans & Pricing</a></li>
+                <li><a href="#">News & Blogs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </nav>
+    </footer>
+</LayoutProjects>
