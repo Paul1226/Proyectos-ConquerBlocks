@@ -123,8 +123,14 @@ export default {
 					},
 					cuarto: {
 						backg: "#22242A",
-					}
+					},
+					quinto: {
+						backg: "#31135E",
+					},
 				}
+			},
+			backgroundImage: {
+				quinto: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)"
 			}
 		},
 	},

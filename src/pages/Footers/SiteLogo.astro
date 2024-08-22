@@ -1,0 +1,170 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// icons
+import Facebook from "../../icons/socialNetworks/Facebook.astro";
+import Twitter from "../../icons/socialNetworks/Twitter.astro";
+import Telegram from "../../icons/socialNetworks/Telegram.astro";
+import Instagram from "../../icons/socialNetworks/Instagram.astro";
+---
+
+<LayoutProjects
+    title="Site Logo - ConquerBlocks | PaulDev"
+    nameProject="Site Logo"
+>
+    <div class="fixed inset-0 bg-footers-quinto-backg/20 w-full h-full -z-10">
+    </div>
+
+    <footer class="w-full  text-white">
+        <fieldset class="bg-footers-quinto-backg">
+            <legend
+                class="w-2/3 mx-auto flex justify-between bg-quinto p-5 rounded-lg"
+            >
+                <div class="s">
+                    <h3 class="text-2xl font-semibold text-balance">
+                        Take good design today
+                    </h3>
+                    <ul class="flex items-center gap-4 font-extralight">
+                        <li>web design</li>
+                        <li>ux design</li>
+                        <li>ui design</li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a
+                        class="bg-black px-5 py-2 rounded-full min-w-max"
+                        href="#">Get Started</a
+                    >
+                    <a
+                        class="text-black bg-white px-5 py-2 rounded-full font-medium min-w-max"
+                        href="#">Contact Us</a
+                    >
+                </div>
+            </legend>
+
+            <div class="flex flex-col w-3/4 mx-auto py-10 gap-8">
+                <figure>
+                    <img
+                        src="/images/footers/gradient/logo-sitelogo.webp"
+                        alt="Logo de la págin web"
+                    />
+                </figure>
+
+                <div
+                    class="grid content-list gap-y-10"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));"
+                >
+                    <ul >
+                        <li>Product</li>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Popup Builder</a></li>
+                        <li><a href="#">Web-design</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                    <ul >
+                        <li>Use Cases</li>
+                        <li><a href="#">Web-designers</a></li>
+                        <li><a href="#">Marketers</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                    </ul>
+                    <ul >
+                        <li>Resources</li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Themes</a></li>
+                        <li><a href="#">Hosting</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Sopport</a></li>
+                    </ul>
+                    <ul >
+                        <li>Company</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="d">
+                        <h4 class="text-white text-xl font-semibold pb-4">Let's do it!</h4>
+                        <ul id="list-icons">
+                            <li><a href="#"><Facebook /></a></li>
+                            <li><a href="#"><Telegram /></a></li>
+                            <li><a href="#"><Instagram /></a></li>
+                            <li><a href="#"><Twitter /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="bg-footers-quinto-backg border-t border-white/70">
+            <article class="w-3/4 mx-auto py-5 flex justify-between items-center">
+                <ul class="flex items-center gap-6 flex-wrap" id="footer-list-ultimate">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Sales and Refunds</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+                <p class="text-white/40 min-w-max">© 2021 All Rights Reserved</p>
+            </article>
+        </div>
+    </footer>
+</LayoutProjects>
+
+<style>
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #fc00ff #31135E ;
+        scroll-behavior: smooth
+    }
+    .content-list {
+        ul {
+            @apply flex flex-col gap-2;
+            li:first-child {
+                @apply text-white text-xl font-semibold pb-3;
+            }
+            li {
+                a {
+                    @apply text-white/60 transition-colors duration-300 ease-in-out font-extralight;
+
+                    &:hover {
+                        @apply text-white;
+                    }
+                }
+            }
+        }
+    }
+
+    #list-icons {
+        @apply flex items-center flex-row gap-8;
+        li {
+            @apply pb-0;
+
+
+            a{
+                svg{
+                    @apply stroke-white/60 transition-all duration-300 ease-in-out w-6 h-6 ;
+                }
+
+                &:hover{
+                    svg{
+                        @apply stroke-white scale-110;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-list-ultimate {
+        a{
+            @apply text-white/60 transition-colors duration-300 ease-in-out min-w-max;
+
+            &:hover {
+                @apply text-white;
+            }
+        }
+    }
+</style>
