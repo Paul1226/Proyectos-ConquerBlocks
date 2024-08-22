@@ -18,6 +18,7 @@
     "@fontsource-variable/playfair-display": "^5.0.25",
     "@fontsource/bebas-neue": "^5.0.20",
     "@fontsource/belgrano": "^5.0.12",
+    "@fontsource/merriweather": "^5.0.14",
     "@fontsource/poppins": "^5.0.14",
     "@fontsource/quattrocento": "^5.0.22",
     "astro": "^4.13.3",

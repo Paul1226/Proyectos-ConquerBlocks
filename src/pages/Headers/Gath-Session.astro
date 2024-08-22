@@ -1,0 +1,196 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource/merriweather/700.css";
+---
+
+<LayoutProjects
+    title="Gath Sessions - ConquerBlocks | PaulDev"
+    nameProject="Gath Sessions"
+>
+    <div class="w-full bg-headers-decimo-primario text-white">
+        <div class="w-11/12 mx-auto grid grid-cols-12 gap-5 py-5">
+            <header class="col-span-12 flex items-center justify-between pb-5">
+                <a
+                    class="text-headers-decimo-secundario font-merriweather font-bold text-2xl"
+                    href="/Headers/Gath-Session"
+                    >Gath <span class="text-white">Session</span>.</a
+                >
+                <nav>
+                    <ul class="flex items-center gap-6 text-sm">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Feactures</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <hero-main class="col-span-6 py-10 flex">
+                <hero class="flex flex-col flex-1 justify-between">
+                    <div class="flex flex-col gap-5">
+                        <h1
+                            class="font-merriweather font-bold text-4xl text-balance lg:text-5xl"
+                            style="transition: font-size 500ms;"
+                        >
+                            Build your best community starting from here.
+                        </h1>
+                        <p
+                            class="text-headers-primero-paraghap text-pretty text-sm w-5/6 lg:text-base lg:w-4/6"
+                        >
+                            Meet and communicate with the best people to run
+                            projects, events or other activities in a more
+                            effective and fun way
+                        </p>
+                        <div
+                            class="w-full max-w-[400px] flex items-center gap-4"
+                        >
+                            <a
+                                class="bg-headers-decimo-secundario w-full py-3 rounded-lg inline-flex justify-center rounded-bl-none"
+                                href="#">Get Started</a
+                            >
+                            <a class="inline-flex w-full items-center gap-4 hover:underline" href="#">
+                                <span>Learn more</span>
+                                <svg
+                                    class="w-5"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    ><path
+                                        d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"
+                                    ></path></svg
+                                >
+                            </a>
+                        </div>
+                    </div>
+
+                    <section
+                        class="flex items-center gap-x-12 gap-5 w-full flex-wrap text-sm pt-12"
+                    >
+                        <article class="flex items-center gap-4">
+                            <figure>
+                                <img
+                                    src="/images/headers/gathSession/community-gath.webp"
+                                    alt="Icono de community"
+                                />
+                            </figure>
+                            <p class="">Build<br />Community</p>
+                        </article>
+                        <article class="flex items-center gap-4">
+                            <figure>
+                                <img
+                                    src="/images/headers/gathSession/events-gath.webp"
+                                    alt="Icono de events"
+                                />
+                            </figure>
+                            <p class="">Share<br />Events</p>
+                        </article>
+                        <article class="flex items-center gap-4">
+                            <figure>
+                                <img
+                                    src="/images/headers/gathSession/get-gath.webp"
+                                    alt="Icono de get"
+                                />
+                            </figure>
+                            <p class="">Get<br />Information</p>
+                        </article>
+                    </section>
+                </hero>
+            </hero-main>
+
+            <div
+                class="figures-content col-span-6 grid grid-cols-6 grid-rows-6 gap-5 aspect-square max-h-[550px]"
+            >
+                <figure class="col-span-2 row-span-4 bg-headers-decimo-purple">
+                    <img
+                        class="w-full h-full object-cover scale-125 translate-y-10"
+                        src="/images/headers/gathSession/person1-gath.webp"
+                        alt="Imagen de person1"
+                        loading="lazy"
+                    />
+                </figure>
+                <figure class="col-span-2 row-span-2 bg-headers-decimo-blue">
+                    <img
+                        class="w-full h-full object-contain scale-[1.8] translate-y-12 lg:translate-y-14 xl:translate-y-[4rem] -translate-x-1"
+                        style="transition: transform 0.5s;"
+                        src="/images/headers/gathSession/person3-gath.webp"
+                        alt="Imagen de person3"
+                        loading="lazy"
+                    />
+                </figure>
+                <figure
+                    class="col-span-2 row-span-2 row-start-5 col-start-1 bg-headers-decimo-secundario"
+                >
+                    <img
+                        class="w-full h-full object-contain scale-[2.2] translate-y-20 translate-x-2"
+                        src="/images/headers/gathSession/person2-gath.webp"
+                        alt="Imagen de person2"
+                        loading="lazy"
+                    />
+                </figure>
+                <figure
+                    class="col-span-2 row-span-4 row-start-3 col-start-3 bg-headers-decimo-orange"
+                >
+                    <img
+                        class="w-full h-full object-contain scale-[1.75] translate-y-4 translate-x-1"
+                        src="/images/headers/gathSession/person4-gath.webp"
+                        alt="Imagen de person4"
+                        loading="lazy"
+                    />
+                </figure>
+                <figure
+                    class="col-span-2 row-span-4 row-start-2 bg-headers-decimo-yellow"
+                >
+                    <img
+                        class="w-full h-full object-contain scale-[2.2] translate-y-4 translate-x-1"
+                        src="/images/headers/gathSession/person5-gath.webp"
+                        alt="Imagen de person5"
+                        loading="lazy"
+                    />
+                </figure>
+            </div>
+        </div>
+    </div>
+</LayoutProjects>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #db2a6b #2b2d38;
+    }
+    nav {
+        a {
+            position: relative;
+
+            @apply before:content-[''] before:w-1/2 before:h-[2px] before:bg-transparent before:rounded-full before:absolute before:left-0 before:-bottom-2 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:bg-headers-decimo-secundario;
+
+            &.active {
+                @apply text-headers-decimo-secundario before:bg-headers-decimo-secundario;
+            }
+        }
+    }
+
+    hero {
+        section {
+            article {
+                figure {
+                    @apply w-12 h-12 bg-white/20 p-1 rounded-lg;
+
+                    img {
+                        @apply w-full h-full object-cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .figures-content {
+        figure {
+            transition: border-radius 0.5s;
+            @apply rounded-[2.5rem] overflow-hidden lg:rounded-[3.2rem] xl:rounded-[3.8rem];
+        }
+    }
+</style>

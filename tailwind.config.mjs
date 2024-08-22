@@ -33,6 +33,7 @@ export default {
 				montserrat: ['Montserrat Variable', 'sans-serif'],
 				oswald: ['Oswald Variable', 'sans-serif'],
 				quattrocento: ['Quattrocento', 'serif'],
+				merriweather: ['Merriweather', 'serif']
 			},
 			colors: {
 				smoke: {
@@ -101,6 +102,14 @@ export default {
 					noveno:{
 						primario:"#CAC6BB",
 						borders:"#CAC6BB"
+					},
+					decimo: {
+						primario:"#2B2D38",
+						secundario:"#DB2A6B",
+						purple: "#6E1FED",
+						blue: "#60D3D9",
+						orange: "#FF7E29",
+						yellow: "#F4B840",
 					}
 				}
 			}
