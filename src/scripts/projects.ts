@@ -95,7 +95,7 @@ export const headers: Project[] = [
 export const footers: Project[] =[
     {
         aka: "Maxwell-Light",
-        src: "/images/footers/footer01.webp",
+        src: "/images/footers/maxwell-light/footer01.webp",
         alt: "Preview image of the proyect footer01",
         url: "/Footers/Maxwell-Light",
         bgcolor: "#f9f9f9",
@@ -104,7 +104,7 @@ export const footers: Project[] =[
     },
     {
         aka: "Maxwell-Dark",
-        src: "/images/footers/footer02.webp",
+        src: "/images/footers/maxwell-dark/footer02.webp",
         alt: "Preview image of the proyect footer02",
         url: "/Footers/Maxwell-Dark",
         bgcolor: "#050505",
@@ -112,7 +112,7 @@ export const footers: Project[] =[
     },
     {
         aka: "Site-Logo",
-        src: "/images/footers/footer03.webp",
+        src: "/images/footers/phone/footer03.webp",
         alt: "Preview image of the proyect footer03",
         url: "/Footers/Profesional-Web-Design",
         bgcolor: "#37383C",
@@ -120,21 +120,21 @@ export const footers: Project[] =[
     },
     {
         aka: "Player",
-        src: "/images/footers/footer04.webp",
+        src: "/images/footers/simple/footer04.webp",
         alt: "Preview image of the proyect footer04",
         url: "/Footers/Simple-Music-Player",
         bgcolor: "linear-gradient(90deg, rgba(236,0,140,1) 0%, rgba(252,103,103,1) 100%);"
     },
     {
         aka: "SiteLogo",
-        src: "/images/footers/footer05.webp",
+        src: "/images/footers/gradient/footer05.webp",
         alt: "Preview image of the proyect footer05",
         url: "/Footers/SiteLogo",
         bgcolor: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)"
     },
     {
         aka: "Icons",
-        src: "/images/footers/footer06.webp",
+        src: "/images/footers/social/footer06.webp",
         alt: "Preview image of the proyect footer06",
         url: "/Footers/SocialIcons",
         bgcolor: "#101010"

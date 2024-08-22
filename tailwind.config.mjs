@@ -111,6 +111,13 @@ export default {
 						orange: "#FF7E29",
 						yellow: "#F4B840",
 					}
+				},
+				footers: {
+					primero:{
+						backg:"#CBED9F",
+						primario:"#87DB1C",
+						letters:"#040505"
+					}
 				}
 			}
 		},
