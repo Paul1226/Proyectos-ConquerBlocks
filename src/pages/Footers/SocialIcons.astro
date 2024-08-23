@@ -1,0 +1,67 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// icons
+import Facebook from "../../icons/socialNetworks/Facebook.astro";
+import Twitter from "../../icons/socialNetworks/Twitter.astro";
+import Telegram from "../../icons/socialNetworks/Telegram.astro";
+import Instagram from "../../icons/socialNetworks/Instagram.astro";
+---
+
+<LayoutProjects
+    title="Social Icons - ConquerBlocks | PaulDev"
+    nameProject="Social Icons"
+>
+    <div class="fixed inset-0 bg-[#333333] w-full h-full -z-10"></div>
+
+    <footer class="text-white bg-black fixed w-full bottom-0 left-0">
+        <div class="w-11/12 mx-auto">
+            <div class="prim-cont flex flex-col justify-center gap-6 py-10">
+                <ul-socials class="flex items-center justify-center gap-6">
+                    <li><a href="#"><Facebook /></a></li>
+                    <li><a href="#"><Instagram /></a></li>
+                    <li><a href="#"><Telegram /></a></li>
+                    <li><a href="#"><Twitter /></a></li>
+                </ul-socials>
+                <nav class="relative py-2">
+                    <ul class="flex items-center justify-center gap-4 text-white/50 font-extralight">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                    <a class="absolute top-0 right-0 bg-white text-black px-4 py-2 rounded-full transition-transform duration-300 ease-in-out hover:scale-95" href="#">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center py-5 border-t border-white/70 text-white/80">
+            © 2021 All Rights Reserved
+        </p>
+    </footer>
+</LayoutProjects>
+
+<style>
+    ul-socials {
+        li {
+            list-style: none;
+            /* box-sizing: border-box; */
+            a {
+                @apply transition-all duration-300 ease-in-out bg-white w-8 h-8 flex justify-center items-center p-2 rounded-full hover:scale-110;
+                svg {
+                    @apply stroke-black w-full;
+                }
+            }
+        }
+    }
+    ul {
+        li{
+            a{
+                @apply transition-colors duration-300 ease-in-out;
+                &:hover{
+                    @apply text-white;
+                }
+            }
+        }
+    }
+</style>
