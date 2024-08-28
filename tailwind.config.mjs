@@ -33,7 +33,8 @@ export default {
 				montserrat: ['Montserrat Variable', 'sans-serif'],
 				oswald: ['Oswald Variable', 'sans-serif'],
 				quattrocento: ['Quattrocento', 'serif'],
-				merriweather: ['Merriweather', 'serif']
+				merriweather: ['Merriweather', 'serif'],
+				plus: ['Plus Jakarta Sans Variable', 'sans-serif'],
 			},
 			colors: {
 				smoke: {
@@ -127,10 +128,19 @@ export default {
 					quinto: {
 						backg: "#31135E",
 					},
+				},
+				landings: {
+					primera: {
+						letters: "#13183F",
+						paraghap: "#83869A",
+						btnhover: "#666CA3",
+					}
 				}
 			},
 			backgroundImage: {
-				quinto: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)"
+				quinto: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)",
+				"primera-landing-light": "linear-gradient(0deg, #F02AA6, #FF6F48)",
+				"primera-landing-dark": "linear-gradient(0deg, #F02AA6, #4851FF)",
 			}
 		},
 	},

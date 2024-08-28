@@ -1,35 +1,49 @@
 ---
 // components
-import ScreenSmall from '../components/ScreenSmall.astro';
+import ScreenSmall from "../components/ScreenSmall.astro";
 // fonts
-import '@fontsource/poppins/200.css';
-import '@fontsource/poppins/400.css';
-import '@fontsource/poppins/500.css';
-import '@fontsource/poppins/600.css';
-import '@fontsource/poppins/800.css';
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/800.css";
 
 interface Props {
-	title: string;
-	nameProject: string
+  title: string;
+  nameProject: string;
+  shouldRenderElement?: boolean;
 }
 
-const { title, nameProject } = Astro.props;
+const { title, nameProject, shouldRenderElement = true } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="font-poppins w-full max-w-[1366px] mx-auto bg-headers-primero-claro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="font-poppins w-full max-w-[1366px] mx-auto bg-headers-primero-claro"
+  >
+    {
+		shouldRenderElement && (
 		<ScreenSmall nameProject={nameProject} />
+
 		<main class="hidden md:block relative">
 			<slot />
 		</main>
-	</body>
+	)}
+	{
+		!shouldRenderElement && (
+		<main class="relative">
+			<slot />
+		</main>
+		)
+	}
+  </body>
 </html>

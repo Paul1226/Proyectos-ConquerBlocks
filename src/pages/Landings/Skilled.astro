@@ -1,0 +1,100 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+// Supports weights 200-800
+import "@fontsource-variable/plus-jakarta-sans";
+---
+
+<LayoutProjects
+  title="Skilled - ConquerBlocks | PaulDev"
+  nameProject="Skilled"
+  shouldRenderElement={false}
+>
+  <div class="font-plus text-landings-primera-letters overflow-hidden">
+    <header class="w-11/12 mx-auto flex justify-between items-center py-3 md:pb-10">
+      <a class="font-plus font-extrabold text-3xl" href="#">skilled</a>
+      <a
+        class="bg-landings-primera-letters text-white btn-config hover:bg-landings-primera-btnhover"
+        href="#">Get Started</a
+      >
+    </header>
+
+    <main class="w-11/12 mx-auto">
+      <section class="grid gap-y-6 grid-rows-2 items-center md:grid-cols-2">
+        <hero-content class="flex flex-col gap-y-6 h-full justify-center">
+          <h1 class="font-plus font-extrabold text-5xl text-balance">
+            Maximize skill, minimize budget
+          </h1>
+          <p class="text-landings-primera-paraghap text-pretty">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a
+            class="bg-primera-landing-light text-white btn-config transition-opacity duration-300 ease-in-out hover:opacity-50"
+            href="#">Get Started</a
+          >
+        </hero-content>
+
+        <div class="image relative w-full max-w-[400px] mx-auto">
+            <div class="absolute bg-primera-landing-dark w-[300px] h-[800px] bottom-12 left-1/2 -translate-x-3/4 rounded-full rotate-45 origin-bottom -z-10 hidden md:block"></div>
+
+          <figure
+            class="w-full aspect-square rounded-full overflow-hidden bg-primera-landing-light max-w-[350px] mx-auto md:aspect-auto"
+          >
+            <img
+              class="w-full object-cover"
+              src="/images/landings/skilled/hero-skilled.webp"
+              alt="Imagen hero de Skilled"
+            />
+          </figure>
+
+          <div
+            class="card-figure bottom-0 left-0"
+            style="box-shadow: -5px 10px 10px #13183F20;"
+          >
+            <h4>Course hours</h4>
+            <span>1,451</span>
+          </div>
+          <div
+            class="card-figure top-0 right-0"
+            style="box-shadow: 10px 10px 10px #13183F20;"
+          >
+            <h4>Members</h4>
+            <span>29k</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer></footer>
+</LayoutProjects>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #13183f transparent;
+  }
+
+  .card-figure {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+
+    h4 {
+      @apply font-bold text-landings-primera-paraghap;
+    }
+
+    span {
+      @apply font-extrabold text-4xl;
+    }
+  }
+  .btn-config {
+    @apply px-4 py-2 rounded-full inline-flex w-max transition-all duration-300 ease-in-out hover:scale-95;
+  }
+</style>

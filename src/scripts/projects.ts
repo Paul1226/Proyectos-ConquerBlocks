@@ -143,14 +143,14 @@ export const footers: Project[] =[
 export const landings: Project[] =[
     {
         aka: "Skilled",
-        src: "/images/landings/landing01.webp",
+        src: "/images/landings/skilled/landing01.webp",
         alt: "Preview image of the proyect landing01",
         url: "/Landings/Skilled",
         bgcolor:"linear-gradient(0deg, #f02aa6, #ff6f48)"
     },
     {
         aka: "Typemaster",
-        src: "/images/landings/landing02.webp",
+        src: "/images/landings/typemaster/landing02.webp",
         alt: "Preview image of the proyect landing02",
         url: "/Landings/Typemaster",
         bgcolor:"#f16718"
