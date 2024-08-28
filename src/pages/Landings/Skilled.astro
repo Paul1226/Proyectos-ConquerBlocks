@@ -12,21 +12,25 @@ import "@fontsource-variable/plus-jakarta-sans";
   shouldRenderElement={false}
 >
   <div class="font-plus text-landings-primera-letters overflow-hidden">
-    <header class="w-11/12 mx-auto flex justify-between items-center py-3 md:pb-10">
-      <a class="font-plus font-extrabold text-3xl" href="#">skilled</a>
+    <header
+      class="w-11/12 mx-auto max-w-[1100px] flex justify-between items-center py-3 md:pb-10"
+    >
+      <a class="link-logo" href="#">skilled</a>
       <a
         class="bg-landings-primera-letters text-white btn-config hover:bg-landings-primera-btnhover"
         href="#">Get Started</a
       >
     </header>
 
-    <main class="w-11/12 mx-auto">
-      <section class="grid gap-y-6 grid-rows-2 items-center md:grid-cols-2">
+    <main class="w-full relative">
+      <section
+        class="grid gap-y-6 grid-rows-2 items-center w-11/12 mx-auto md:grid-cols-2 md:grid-rows-1 max-w-[1100px]"
+      >
         <hero-content class="flex flex-col gap-y-6 h-full justify-center">
-          <h1 class="font-plus font-extrabold text-5xl text-balance">
+          <h1 class="font-plus font-extrabold text-5xl text-balance lg:text-6xl" style="transition: font-size 0.5s;">
             Maximize skill, minimize budget
           </h1>
-          <p class="text-landings-primera-paraghap text-pretty">
+          <p class="text-landings-primera-paraghap text-balance text-xl">
             Our modern courses across a range of in-demand skills will give you
             the knowledge you need to live the life you want.
           </p>
@@ -37,7 +41,10 @@ import "@fontsource-variable/plus-jakarta-sans";
         </hero-content>
 
         <div class="image relative w-full max-w-[400px] mx-auto">
-            <div class="absolute bg-primera-landing-dark w-[300px] h-[800px] bottom-12 left-1/2 -translate-x-3/4 rounded-full rotate-45 origin-bottom -z-10 hidden md:block"></div>
+          <div
+            class="absolute bg-primera-landing-dark w-[300px] h-[800px] bottom-12 left-1/2 -translate-x-3/4 rounded-full rotate-45 origin-bottom -z-10 hidden md:block"
+          >
+          </div>
 
           <figure
             class="w-full aspect-square rounded-full overflow-hidden bg-primera-landing-light max-w-[350px] mx-auto md:aspect-auto"
@@ -65,10 +72,77 @@ import "@fontsource-variable/plus-jakarta-sans";
           </div>
         </div>
       </section>
+
+      <div class="w-full relative">
+        <div class="absolute inset-0 bg-gray-gradient -z-10"></div>
+        <section
+          class="grid w-11/12 mx-auto max-w-[1100px] gap-y-10 gap-x-3 py-16"
+          style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));"
+        >
+          <article class="bg-primera-landing-light rounded-xl p-4 grid place-content-center h-full">
+            <h2 class="text-white text-xl font-bold text-balance pb-4">Check out our most popular courses!</h2>
+          </article>
+          <article class="content-card">
+            <figure>
+                <img src="/images/landings/skilled/run-skilled.webp" alt="Icon of a running">
+            </figure>
+            <div class="c">
+                <h3>Animation</h3>
+                <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+                <a href="#">Get Started</a>
+            </div>
+          </article>
+          <article class="content-card">
+            <figure>
+                <img src="/images/landings/skilled/design-skilled.webp" alt="Icon design skilled">
+            </figure>
+            <div class="c">
+                <h3>Design</h3>
+                <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+                <a href="#">Get Started</a>
+            </div>
+          </article>
+          <article class="content-card">
+            <figure>
+                <img src="/images/landings/skilled/photograpy-skilled.webp" alt="Icon photograpy skilled">
+            </figure>
+            <div class="c">
+                <h3>Photography</h3>
+                <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                <a href="#">Get Started</a>
+            </div>
+          </article>
+          <article class="content-card">
+            <figure>
+                <img src="/images/landings/skilled/crypto-skilled.webp" alt="Icon crypto skilled">
+            </figure>
+            <div class="c">
+                <h3>Crypto</h3>
+                <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                <a href="#">Get Started</a>
+            </div>
+          </article>
+          <article class="content-card">
+            <figure>
+                <img src="/images/landings/skilled/business-skilled.webp" alt="Icon business skilled">
+            </figure>
+            <div class="c">
+                <h3>Business</h3>
+                <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                <a href="#">Get Started</a>
+            </div>
+          </article>
+        </section>
+      </div>
     </main>
   </div>
 
-  <footer></footer>
+  <footer class="bg-landings-primera-letters text-white">
+    <div class="w-11/12 mx-auto max-w-[1100px] flex justify-between items-center py-7">
+        <a class="link-logo" href="#">skilled</a>
+        <a class="btn-config bg-primera-landing-dark hover:opacity-70" href="#">Get Started</a>
+    </div>
+  </footer>
 </LayoutProjects>
 
 <style>
@@ -78,6 +152,9 @@ import "@fontsource-variable/plus-jakarta-sans";
     scrollbar-color: #13183f transparent;
   }
 
+  .link-logo {
+    @apply font-extrabold text-3xl;
+  }
   .card-figure {
     position: absolute;
     width: max-content;
@@ -88,13 +165,55 @@ import "@fontsource-variable/plus-jakarta-sans";
 
     h4 {
       @apply font-bold text-landings-primera-paraghap;
+      color: #83869a;
+      font-weight: 700;
     }
 
     span {
       @apply font-extrabold text-4xl;
+      font-weight: 800;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
     }
   }
   .btn-config {
     @apply px-4 py-2 rounded-full inline-flex w-max transition-all duration-300 ease-in-out hover:scale-95;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    width: max-content;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+
+  .content-card {
+    @apply rounded-xl p-5 grid place-content-center h-full relative pt-8 bg-white;
+
+    figure {
+        @apply w-12 h-12 bg-primera-landing-light p-3 rounded-full absolute left-5;
+        bottom: calc(100% - 1.5rem);
+        img {
+            @apply w-full h-full object-cover;
+        }
+    }
+
+    .c {
+        @apply flex flex-col gap-3;
+        
+        h3 {
+            @apply font-extrabold text-lg;
+        }
+        p{
+            @apply text-landings-primera-paraghap;
+        }
+        
+        a{
+            @apply text-landings-primera-links font-bold transition-all duration-300 ease-in-out hover:opacity-50 w-max hover:scale-95;
+        }
+    }
   }
 </style>

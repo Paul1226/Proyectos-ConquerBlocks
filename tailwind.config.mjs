@@ -134,6 +134,7 @@ export default {
 						letters: "#13183F",
 						paraghap: "#83869A",
 						btnhover: "#666CA3",
+						links: "#F74780",
 					}
 				}
 			},
@@ -141,6 +142,7 @@ export default {
 				quinto: "linear-gradient(90deg, rgba(252,0,255,1) 0%, rgba(0,219,222,1) 100%)",
 				"primera-landing-light": "linear-gradient(0deg, #F02AA6, #FF6F48)",
 				"primera-landing-dark": "linear-gradient(0deg, #F02AA6, #4851FF)",
+				"gray-gradient": "linear-gradient(180deg, #F9FAFB 0%, #ffffff 8%, #ffffff 30%, #f0f1ff 100%)",
 			}
 		},
 	},
