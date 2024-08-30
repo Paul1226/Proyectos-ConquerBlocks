@@ -3,9 +3,6 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-			screens: {
-				md: '800px',
-			},
 			keyframes:{
 				"loop": {
 					"100%": { transform: "translateX(calc(-50% - var(--extra-width)))" }
@@ -35,6 +32,7 @@ export default {
 				quattrocento: ['Quattrocento', 'serif'],
 				merriweather: ['Merriweather', 'serif'],
 				plus: ['Plus Jakarta Sans Variable', 'sans-serif'],
+				barlow: ['Barlow', 'sans-serif'],
 			},
 			colors: {
 				smoke: {
@@ -135,6 +133,12 @@ export default {
 						paraghap: "#83869A",
 						btnhover: "#666CA3",
 						links: "#F74780",
+					},
+					segunda: {
+						orange: '#F16718',
+						blue: '#162542',
+						gray: '#E8EFF2',
+						paragraphy: '#7B8BAD',
 					}
 				}
 			},

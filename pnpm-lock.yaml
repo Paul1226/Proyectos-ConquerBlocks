@@ -29,6 +29,9 @@ importers:
       '@fontsource-variable/plus-jakarta-sans':
         specifier: ^5.0.22
         version: 5.0.22
+      '@fontsource/barlow':
+        specifier: ^5.0.14
+        version: 5.0.14
       '@fontsource/bebas-neue':
         specifier: ^5.0.20
         version: 5.0.20
@@ -372,6 +375,9 @@ packages:
 
   '@fontsource-variable/plus-jakarta-sans@5.0.22':
     resolution: {integrity: sha512-YDV+FVn+icpvB004N3R973K/0W75FRPaEmeOoZ5nBuPAN8hizhUfTHpWpEv9FUr3C8FkPFwzrVl3gvdkzDdBxw==}
+
+  '@fontsource/barlow@5.0.14':
+    resolution: {integrity: sha512-4F+rbfklgWHatFheB3ZQgTFjkqzMiWfHomy69TWSGc0qU+w+QhX9dGz7IVQRksvKciJoXAhxijCxwAJw418g4Q==}
 
   '@fontsource/bebas-neue@5.0.20':
     resolution: {integrity: sha512-lJ/y3N/dzOZw1j1ArSOju0Mcz5vEyn81WsUm+ECIicnkT3Um6Y/+IUW+k7roWKSj1pKTu+kyFPZMuVhikoQZBw==}
@@ -2433,6 +2439,8 @@ snapshots:
   '@fontsource-variable/playfair-display@5.0.25': {}
 
   '@fontsource-variable/plus-jakarta-sans@5.0.22': {}
+
+  '@fontsource/barlow@5.0.14': {}
 
   '@fontsource/bebas-neue@5.0.20': {}
 

@@ -1,0 +1,102 @@
+---
+import LayoutProjects from "../../layouts/LayoutProjects.astro";
+
+// fonts
+import "@fontsource/barlow/400.css";
+import "@fontsource/barlow/500.css";
+import "@fontsource/barlow/700.css";
+import "@fontsource/barlow/800.css";
+import "@fontsource/barlow/900.css";
+---
+
+<LayoutProjects
+  title="Typemaster - ConquerBlocks | PaulDev"
+  nameProject="Typemaster"
+  shouldRenderElement={false}
+>
+  <div class="w-full font-barlow text-landings-segunda-blue bg-white overflow-hidden">
+    <header>
+      <div
+        class="w-11/12 max-w-[1100px] mx-auto py-4 flex justify-between items-center"
+      >
+        <a
+          class="w-10 h-10 relative bg-landings-segunda-orange text-white uppercase font-bold"
+          href="#"
+        >
+          <span class="absolute top-0 left-1">tm</span>
+        </a>
+
+        <a
+          href="#"
+          class="btn-typemaster bg-landings-segunda-gray text-landings-segunda-blue hover:bg-landings-segunda-blue hover:text-white"
+          >Pre-Order now</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="grid grid-cols-1 grid-rows-2 py-5 gap-y-10 overflow-hidden md:grid-cols-2 md:grid-rows-1 md:ml-[calc(100%/12/2)] md:items-center max-w-[1100px] lg:w-11/12 lg:mx-auto lg:gap-8 lg:overflow-visible"
+      >
+        <hero-main
+          class="flex flex-col gap-4 justify-center w-11/12 max-w-[1100px] mx-auto md:w-full"
+        >
+          <h1 class="font-black text-5xl uppercase text-balance">
+            typemaster keyboard
+          </h1>
+          <p class="text-landings-segunda-paragraphy font-medium text-balance">
+            Improve your productivity and gaming without breaking the bank.
+            Upgrade to a high quality mechanical typing experience.
+          </p>
+          <div class="lins">
+            <a
+              class="btn-typemaster bg-landings-segunda-orange text-white hover:bg-landings-segunda-orange/60"
+              href="#">pre-order now</a
+            >
+            <a
+              class="font-bold uppercase text-landings-segunda-paragraphy px-6 py-3 transition-colors duration-300 ease-in-out hover:text-landings-segunda-blue"
+              href="#">Release on 5/27</a
+            >
+          </div>
+        </hero-main>
+
+        <div class="">
+          <figure
+            class="w-full aspect-video relative bg-bla ml-[calc(100%/12/2)] rounded-l-xl overflow-hidden bg-landings-segunda-paragraphy lg:rounded-xl lg:m-0 lg:overflow-visible"
+          >
+            <img
+          class="w-full object-cover absolute top-0 left-0 h-full rounded-xl"
+          src="/images/landings/typemaster/keyboard-typemaster.webp"
+          alt="Imagen de Typemaster"
+          />
+          <div
+          class="hidden lg:block absolute h-3/5 aspect-square rounded-xl bg-landings-segunda-gray top-0 left-[105%] z-10"
+          >
+        </div>
+        </figure>
+        </div>
+      </div>
+    </main>
+  </div>
+</LayoutProjects>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #7b8bad transparent;
+  }
+  .btn-typemaster {
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: all 300ms ease-in-out;
+    width: max-content;
+    display: inline-flex;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+</style>
